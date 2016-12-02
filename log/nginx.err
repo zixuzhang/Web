@@ -1,0 +1,174 @@
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/25 13:33:37 [warn] 22467#22467: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/25 13:33:37 [emerg] 22467#22467: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/25 14:08:19 [warn] 2592#2592: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/25 14:08:19 [emerg] 2592#2592: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/25 17:45:01 [warn] 3969#3969: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/25 17:45:01 [emerg] 3969#3969: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/25 18:00:22 [warn] 4753#4753: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/25 18:00:22 [emerg] 4753#4753: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/25 18:28:06 [warn] 6219#6219: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/25 18:28:06 [emerg] 6219#6219: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/25 18:28:09 [warn] 6262#6262: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/25 18:28:09 [emerg] 6262#6262: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/25 18:28:17 [warn] 6266#6266: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/25 18:28:17 [emerg] 6266#6266: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/25 18:30:09 [warn] 6304#6304: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/25 18:30:09 [emerg] 6304#6304: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/25 18:31:39 [warn] 6337#6337: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/25 18:31:39 [emerg] 6337#6337: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/25 18:31:50 [warn] 6394#6394: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/25 18:31:50 [emerg] 6394#6394: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/25 18:32:37 [warn] 6412#6412: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/25 18:32:37 [emerg] 6412#6412: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/25 18:32:39 [warn] 6455#6455: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/25 18:32:39 [emerg] 6455#6455: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/25 18:33:17 [warn] 6495#6495: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/25 18:33:17 [emerg] 6495#6495: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/25 18:33:20 [warn] 6538#6538: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/25 18:33:20 [emerg] 6538#6538: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/25 18:36:24 [warn] 6672#6672: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/25 18:36:24 [emerg] 6672#6672: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/25 18:36:26 [warn] 6715#6715: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/25 18:36:26 [emerg] 6715#6715: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/25 18:44:00 [warn] 7283#7283: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/25 18:44:00 [emerg] 7283#7283: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/25 18:44:05 [warn] 7290#7290: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/25 18:44:05 [emerg] 7290#7290: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/25 18:50:03 [warn] 7596#7596: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/25 18:50:03 [emerg] 7596#7596: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/25 18:50:06 [warn] 7639#7639: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/25 18:50:06 [emerg] 7639#7639: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/25 18:50:45 [warn] 7724#7724: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/25 18:50:45 [emerg] 7724#7724: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/25 18:50:47 [warn] 7769#7769: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/25 18:50:47 [emerg] 7769#7769: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/25 18:50:48 [warn] 7776#7776: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/25 18:50:48 [emerg] 7776#7776: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/25 18:58:25 [warn] 8495#8495: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/25 18:58:25 [emerg] 8495#8495: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/25 18:58:29 [warn] 8497#8497: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/25 18:58:29 [emerg] 8497#8497: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/25 18:58:48 [warn] 8514#8514: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/25 18:58:48 [emerg] 8514#8514: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/25 19:03:49 [warn] 8762#8762: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/25 19:03:49 [emerg] 8762#8762: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/25 19:03:52 [warn] 8805#8805: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/25 19:03:52 [emerg] 8805#8805: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/28 08:43:15 [warn] 4290#4290: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/28 08:43:15 [emerg] 4290#4290: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/30 08:47:18 [warn] 4315#4315: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/30 08:47:18 [emerg] 4315#4315: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/30 09:05:45 [warn] 6011#6011: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/30 09:05:45 [emerg] 6011#6011: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/30 09:15:55 [warn] 7294#7294: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/30 09:15:55 [emerg] 7294#7294: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/30 09:19:32 [warn] 7575#7575: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/30 09:19:32 [emerg] 7575#7575: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/30 09:21:39 [warn] 7953#7953: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/30 09:21:39 [emerg] 7953#7953: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/30 09:27:05 [warn] 8446#8446: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/30 09:27:05 [emerg] 8446#8446: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/30 09:27:09 [warn] 8489#8489: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/30 09:27:09 [emerg] 8489#8489: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/30 09:51:16 [warn] 10429#10429: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/30 09:51:16 [emerg] 10429#10429: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/30 09:51:19 [warn] 10476#10476: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/30 09:51:19 [emerg] 10476#10476: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/30 09:52:09 [warn] 10600#10600: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/30 09:52:09 [emerg] 10600#10600: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/30 09:52:12 [warn] 10648#10648: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/30 09:52:12 [emerg] 10648#10648: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/30 09:54:51 [warn] 11025#11025: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/30 09:54:51 [emerg] 11025#11025: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/30 09:55:41 [warn] 11184#11184: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/30 09:55:41 [emerg] 11184#11184: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/30 10:00:26 [warn] 11693#11693: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/30 10:00:26 [emerg] 11693#11693: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/30 10:07:38 [warn] 12443#12443: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/30 10:07:38 [emerg] 12443#12443: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/30 10:14:57 [warn] 2536#2536: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/30 10:14:57 [emerg] 2536#2536: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/30 10:21:17 [warn] 3616#3616: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/30 10:21:17 [emerg] 3616#3616: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/30 10:36:02 [warn] 4905#4905: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/30 10:36:02 [emerg] 4905#4905: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/30 10:37:10 [warn] 5041#5041: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/30 10:37:10 [emerg] 5041#5041: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/30 10:38:09 [warn] 5168#5168: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/30 10:38:09 [emerg] 5168#5168: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/30 16:00:23 [warn] 28030#28030: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/30 16:00:23 [emerg] 28030#28030: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/11/30 17:15:07 [warn] 701#701: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/11/30 17:15:07 [emerg] 701#701: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/12/01 10:19:13 [warn] 12527#12527: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/12/01 10:19:13 [emerg] 12527#12527: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/12/01 10:38:40 [warn] 14165#14165: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/12/01 10:38:40 [emerg] 14165#14165: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/12/01 10:38:44 [warn] 14208#14208: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/12/01 10:38:44 [emerg] 14208#14208: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/12/01 10:39:43 [warn] 14324#14324: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/12/01 10:39:43 [emerg] 14324#14324: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/12/01 10:39:46 [warn] 14371#14371: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/12/01 10:39:46 [emerg] 14371#14371: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/12/01 11:55:52 [warn] 19888#19888: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/12/01 11:55:52 [emerg] 19888#19888: open() "/var/log/nginx/access.log" failed (13: Permission denied)
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2016/12/01 11:56:21 [warn] 19948#19948: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2016/12/01 11:56:21 [emerg] 19948#19948: open() "/var/log/nginx/access.log" failed (13: Permission denied)

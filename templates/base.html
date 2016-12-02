@@ -2,6 +2,12 @@
 
 {% block title %}智信九鼎{% endblock %}
 
+{% block head %}
+{{ super() }}
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+<link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+{% endblock %}
+
 {% block navbar %}
 <div class="navbar navbar-inverse" role="navigation">
 	<div class="container">
@@ -17,16 +23,22 @@
 		</div>
 		<div class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
-				<li><a href="/project">所有项目</a></li>
+				<li><a href="/company">所有公司</a></li>
 			</ul>
-			<ul class="nav navbar-nav">
-				<li><a href="/project/government">政府项目</a></li>
-			</ul>
-			<ul class="nav navbar-nav">
-				<li><a href="/project/innovation">创新主体</a></li>
-			</ul>
-			<ul class="nav navbar-nav">
-				<li><a href="/project/investment">投融资机构</a></li>
+{#            <ul class="nav navbar-nav">#}
+{#				<li><a href="/project">所有项目</a></li>#}
+{#			</ul>#}
+{#			<ul class="nav navbar-nav">#}
+{#				<li><a href="/project/government">政府项目</a></li>#}
+{#			</ul>#}
+{#			<ul class="nav navbar-nav">#}
+{#				<li><a href="/project/innovation">创新主体</a></li>#}
+{#			</ul>#}
+{#			<ul class="nav navbar-nav">#}
+{#				<li><a href="/project/investment">投融资机构</a></li>#}
+{#			</ul>#}
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="/upload">上传项目文件夹</a></li>
 			</ul>
 		</div>
 	</div>

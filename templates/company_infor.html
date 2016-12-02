@@ -4,14 +4,14 @@
 
 {% block page_content %}
 <div class="page-header">
-	<h1>内容正在完善。。。</h1>
+	<h3>{{ company_name }}:公司信息</h3>
 
 	{{ count }}
 	<ul>
 	{% for file in files %}
 	<li>
-		<a href={{ file._id }}>{{ file.filename }}</a>
-		<li>{{file._id}}</li>
+		<a href='/{{ file._id }}'>{{ file.filename }}</a>
+		<!-- <li>{{file._id}}</li> -->
 	</li>
 
 	{% endfor %}

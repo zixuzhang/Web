@@ -1,0 +1,2027 @@
+[2016-11-25 11:27:29 +0000] [13646] [INFO] Starting gunicorn 19.6.0
+[2016-11-25 11:27:29 +0000] [13646] [INFO] Listening at: http://0.0.0.0:5050 (13646)
+[2016-11-25 11:27:29 +0000] [13646] [INFO] Using worker: sync
+[2016-11-25 11:27:29 +0000] [13651] [INFO] Booting worker with pid: 13651
+[2016-11-25 11:27:29 +0000] [13660] [INFO] Booting worker with pid: 13660
+[2016-11-25 11:27:29 +0000] [13663] [INFO] Booting worker with pid: 13663
+[2016-11-25 11:27:29 +0000] [13672] [INFO] Booting worker with pid: 13672
+[2016-11-25 11:27:40,325] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 64, in download
+    file = fs.get(ObjectId(file_id))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 110, in __init__
+    self.__validate(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 206, in __validate
+    _raise_invalid_id(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 52, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+[2016-11-25 11:27:45,950] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 64, in download
+    file = fs.get(ObjectId(file_id))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 110, in __init__
+    self.__validate(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 206, in __validate
+    _raise_invalid_id(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 52, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+[2016-11-25 11:27:58,882] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 64, in download
+    file = fs.get(ObjectId(file_id))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 110, in __init__
+    self.__validate(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 206, in __validate
+    _raise_invalid_id(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 52, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+[2016-11-25 11:28:00,751] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 64, in download
+    file = fs.get(ObjectId(file_id))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 110, in __init__
+    self.__validate(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 206, in __validate
+    _raise_invalid_id(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 52, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+[2016-11-25 11:28:01,286] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 64, in download
+    file = fs.get(ObjectId(file_id))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 110, in __init__
+    self.__validate(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 206, in __validate
+    _raise_invalid_id(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 52, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+[2016-11-25 11:28:01,513] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 64, in download
+    file = fs.get(ObjectId(file_id))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 110, in __init__
+    self.__validate(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 206, in __validate
+    _raise_invalid_id(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 52, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+[2016-11-25 11:28:02,038] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 64, in download
+    file = fs.get(ObjectId(file_id))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 110, in __init__
+    self.__validate(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 206, in __validate
+    _raise_invalid_id(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 52, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+[2016-11-25 11:28:47,613] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 64, in download
+    file = fs.get(ObjectId(file_id))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 110, in __init__
+    self.__validate(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 206, in __validate
+    _raise_invalid_id(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 52, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+[2016-11-25 11:29:20 +0000] [13889] [INFO] Starting gunicorn 19.6.0
+[2016-11-25 11:29:20 +0000] [13889] [ERROR] Connection in use: ('0.0.0.0', 5050)
+[2016-11-25 11:29:20 +0000] [13889] [ERROR] Retrying in 1 second.
+[2016-11-25 11:29:21 +0000] [13889] [ERROR] Connection in use: ('0.0.0.0', 5050)
+[2016-11-25 11:29:21 +0000] [13889] [ERROR] Retrying in 1 second.
+[2016-11-25 11:29:22 +0000] [13889] [ERROR] Connection in use: ('0.0.0.0', 5050)
+[2016-11-25 11:29:22 +0000] [13889] [ERROR] Retrying in 1 second.
+[2016-11-25 11:29:23 +0000] [13889] [ERROR] Connection in use: ('0.0.0.0', 5050)
+[2016-11-25 11:29:23 +0000] [13889] [ERROR] Retrying in 1 second.
+[2016-11-25 11:29:24 +0000] [13889] [ERROR] Connection in use: ('0.0.0.0', 5050)
+[2016-11-25 11:29:24 +0000] [13889] [ERROR] Retrying in 1 second.
+[2016-11-25 11:29:25 +0000] [13889] [ERROR] Can't connect to ('0.0.0.0', 5050)
+[2016-11-25 11:34:28 +0000] [14252] [INFO] Starting gunicorn 19.6.0
+[2016-11-25 11:34:28 +0000] [14252] [INFO] Listening at: http://0.0.0.0:5050 (14252)
+[2016-11-25 11:34:28 +0000] [14252] [INFO] Using worker: sync
+[2016-11-25 11:34:28 +0000] [14257] [INFO] Booting worker with pid: 14257
+[2016-11-25 11:34:28 +0000] [14267] [INFO] Booting worker with pid: 14267
+[2016-11-25 11:34:28 +0000] [14268] [INFO] Booting worker with pid: 14268
+[2016-11-25 11:34:28 +0000] [14271] [INFO] Booting worker with pid: 14271
+[2016-11-25 13:33:37 +0000] [22468] [INFO] Starting gunicorn 19.6.0
+[2016-11-25 13:33:37 +0000] [22468] [INFO] Listening at: http://0.0.0.0:8080 (22468)
+[2016-11-25 13:33:37 +0000] [22468] [INFO] Using worker: sync
+[2016-11-25 13:33:37 +0000] [22473] [INFO] Booting worker with pid: 22473
+[2016-11-25 13:33:37 +0000] [22476] [INFO] Booting worker with pid: 22476
+[2016-11-25 13:33:37 +0000] [22485] [INFO] Booting worker with pid: 22485
+[2016-11-25 13:33:37 +0000] [22492] [INFO] Booting worker with pid: 22492
+[2016-11-25 13:33:45,135] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 64, in download
+    file = fs.get(ObjectId(file_id))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 110, in __init__
+    self.__validate(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 206, in __validate
+    _raise_invalid_id(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 52, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+[2016-11-25 13:33:51,025] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 64, in download
+    file = fs.get(ObjectId(file_id))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 110, in __init__
+    self.__validate(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 206, in __validate
+    _raise_invalid_id(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 52, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+[2016-11-25 13:34:19 +0000] [22468] [CRITICAL] WORKER TIMEOUT (pid:22492)
+[2016-11-25 13:34:19 +0000] [22492] [INFO] Worker exiting (pid: 22492)
+[2016-11-25 13:34:20 +0000] [22558] [INFO] Booting worker with pid: 22558
+[2016-11-25 13:57:29 +0000] [24177] [INFO] Booting worker with pid: 24177
+[2016-11-25 13:57:29 +0000] [24180] [INFO] Booting worker with pid: 24180
+[2016-11-25 13:57:29 +0000] [24172] [INFO] Booting worker with pid: 24172
+[2016-11-25 13:57:29 +0000] [24173] [INFO] Booting worker with pid: 24173
+[2016-11-25 14:08:19 +0000] [2593] [INFO] Starting gunicorn 19.6.0
+[2016-11-25 14:08:19 +0000] [2593] [INFO] Listening at: http://0.0.0.0:8080 (2593)
+[2016-11-25 14:08:19 +0000] [2593] [INFO] Using worker: sync
+[2016-11-25 14:08:19 +0000] [2598] [INFO] Booting worker with pid: 2598
+[2016-11-25 14:08:19 +0000] [2601] [INFO] Booting worker with pid: 2601
+[2016-11-25 14:08:19 +0000] [2608] [INFO] Booting worker with pid: 2608
+[2016-11-25 14:08:19 +0000] [2609] [INFO] Booting worker with pid: 2609
+[2016-11-25 14:09:08,919] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 37, in index
+    count = files.count()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/cursor.py", line 708, in count
+    return self.__collection._count(cmd)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/collection.py", line 1202, in _count
+    with self._socket_for_reads() as (sock_info, slave_ok):
+  File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/mongo_client.py", line 798, in _socket_for_reads
+    with self._get_socket(read_preference) as sock_info:
+  File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/mongo_client.py", line 762, in _get_socket
+    server = self._get_topology().select_server(selector)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/topology.py", line 210, in select_server
+    address))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/topology.py", line 186, in select_servers
+    self._error_message(selector))
+ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused
+[2016-11-25 14:09:16 +0000] [2593] [CRITICAL] WORKER TIMEOUT (pid:2601)
+[2016-11-25 14:09:16 +0000] [2601] [INFO] Worker exiting (pid: 2601)
+[2016-11-25 14:09:16 +0000] [2665] [INFO] Booting worker with pid: 2665
+[2016-11-25 14:09:46,905] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 37, in index
+    count = files.count()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/cursor.py", line 708, in count
+    return self.__collection._count(cmd)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/collection.py", line 1202, in _count
+    with self._socket_for_reads() as (sock_info, slave_ok):
+  File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/mongo_client.py", line 798, in _socket_for_reads
+    with self._get_socket(read_preference) as sock_info:
+  File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/mongo_client.py", line 762, in _get_socket
+    server = self._get_topology().select_server(selector)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/topology.py", line 210, in select_server
+    address))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/topology.py", line 186, in select_servers
+    self._error_message(selector))
+ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused
+[2016-11-25 14:09:51 +0000] [2593] [CRITICAL] WORKER TIMEOUT (pid:2665)
+[2016-11-25 14:09:51 +0000] [2665] [INFO] Worker exiting (pid: 2665)
+[2016-11-25 14:09:52 +0000] [2696] [INFO] Booting worker with pid: 2696
+[2016-11-25 14:10:22,519] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 37, in index
+    count = files.count()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/cursor.py", line 708, in count
+    return self.__collection._count(cmd)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/collection.py", line 1202, in _count
+    with self._socket_for_reads() as (sock_info, slave_ok):
+  File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/mongo_client.py", line 798, in _socket_for_reads
+    with self._get_socket(read_preference) as sock_info:
+  File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/mongo_client.py", line 762, in _get_socket
+    server = self._get_topology().select_server(selector)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/topology.py", line 210, in select_server
+    address))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/topology.py", line 186, in select_servers
+    self._error_message(selector))
+ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused
+[2016-11-25 14:10:22,977] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 64, in download
+    file = fs.get(ObjectId(file_id))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 110, in __init__
+    self.__validate(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 206, in __validate
+    _raise_invalid_id(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 52, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+[2016-11-25 14:10:53,232] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 64, in download
+    file = fs.get(ObjectId(file_id))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 110, in __init__
+    self.__validate(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 206, in __validate
+    _raise_invalid_id(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 52, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+[2016-11-25 14:14:59,308] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 64, in download
+    file = fs.get(ObjectId(file_id))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 110, in __init__
+    self.__validate(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 206, in __validate
+    _raise_invalid_id(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 52, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+[2016-11-25 14:15:06,274] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 64, in download
+    file = fs.get(ObjectId(file_id))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 110, in __init__
+    self.__validate(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 206, in __validate
+    _raise_invalid_id(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 52, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+[2016-11-25 14:26:28 +0000] [2593] [INFO] Handling signal: term
+[2016-11-25 14:26:28 +0000] [2696] [INFO] Worker exiting (pid: 2696)
+[2016-11-25 14:26:28 +0000] [2598] [INFO] Worker exiting (pid: 2598)
+[2016-11-25 14:26:28 +0000] [2608] [INFO] Worker exiting (pid: 2608)
+[2016-11-25 14:26:28 +0000] [2609] [INFO] Worker exiting (pid: 2609)
+[2016-11-25 17:45:01 +0000] [3970] [INFO] Starting gunicorn 19.6.0
+[2016-11-25 17:45:01 +0000] [3970] [INFO] Listening at: http://0.0.0.0:8080 (3970)
+[2016-11-25 17:45:01 +0000] [3970] [INFO] Using worker: sync
+[2016-11-25 17:45:01 +0000] [3975] [INFO] Booting worker with pid: 3975
+[2016-11-25 17:45:01 +0000] [3976] [INFO] Booting worker with pid: 3976
+[2016-11-25 17:45:01 +0000] [3977] [INFO] Booting worker with pid: 3977
+[2016-11-25 17:45:01 +0000] [3984] [INFO] Booting worker with pid: 3984
+[2016-11-25 17:47:30,406] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 64, in download
+    file = fs.get(ObjectId(file_id))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 110, in __init__
+    self.__validate(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 206, in __validate
+    _raise_invalid_id(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 52, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+[2016-11-25 17:47:45,038] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 64, in download
+    file = fs.get(ObjectId(file_id))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 110, in __init__
+    self.__validate(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 206, in __validate
+    _raise_invalid_id(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 52, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+[2016-11-25 17:47:45,079] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 64, in download
+    file = fs.get(ObjectId(file_id))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 110, in __init__
+    self.__validate(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 206, in __validate
+    _raise_invalid_id(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 52, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+[2016-11-25 17:55:09,567] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 64, in download
+    file = fs.get(ObjectId(file_id))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 110, in __init__
+    self.__validate(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 206, in __validate
+    _raise_invalid_id(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 52, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+[2016-11-25 17:55:37,805] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 64, in download
+    file = fs.get(ObjectId(file_id))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 110, in __init__
+    self.__validate(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 206, in __validate
+    _raise_invalid_id(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 52, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+[2016-11-25 18:00:22 +0000] [4754] [INFO] Starting gunicorn 19.6.0
+[2016-11-25 18:00:22 +0000] [4754] [INFO] Listening at: http://0.0.0.0:8080 (4754)
+[2016-11-25 18:00:22 +0000] [4754] [INFO] Using worker: sync
+[2016-11-25 18:00:22 +0000] [4759] [INFO] Booting worker with pid: 4759
+[2016-11-25 18:00:22 +0000] [4760] [INFO] Booting worker with pid: 4760
+[2016-11-25 18:00:22 +0000] [4777] [INFO] Booting worker with pid: 4777
+[2016-11-25 18:00:22 +0000] [4782] [INFO] Booting worker with pid: 4782
+[2016-11-25 18:01:20,959] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 64, in download
+    file = fs.get(ObjectId(file_id))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 110, in __init__
+    self.__validate(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 206, in __validate
+    _raise_invalid_id(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 52, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+[2016-11-25 18:01:50 +0000] [4754] [CRITICAL] WORKER TIMEOUT (pid:4760)
+[2016-11-25 18:01:50 +0000] [4754] [CRITICAL] WORKER TIMEOUT (pid:4759)
+[2016-11-25 18:01:50 +0000] [4760] [INFO] Worker exiting (pid: 4760)
+[2016-11-25 18:01:50 +0000] [4759] [INFO] Worker exiting (pid: 4759)
+[2016-11-25 18:01:50 +0000] [4906] [INFO] Booting worker with pid: 4906
+[2016-11-25 18:01:50 +0000] [4909] [INFO] Booting worker with pid: 4909
+[2016-11-25 18:02:54,543] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 64, in download
+    file = fs.get(ObjectId(file_id))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 110, in __init__
+    self.__validate(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 206, in __validate
+    _raise_invalid_id(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 52, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+[2016-11-25 18:03:25 +0000] [4754] [CRITICAL] WORKER TIMEOUT (pid:4909)
+[2016-11-25 18:03:25 +0000] [4754] [CRITICAL] WORKER TIMEOUT (pid:4782)
+[2016-11-25 18:03:25 +0000] [4909] [INFO] Worker exiting (pid: 4909)
+[2016-11-25 18:03:25 +0000] [4782] [INFO] Worker exiting (pid: 4782)
+[2016-11-25 18:03:25 +0000] [5068] [INFO] Booting worker with pid: 5068
+[2016-11-25 18:03:25 +0000] [5069] [INFO] Booting worker with pid: 5069
+[2016-11-25 18:28:06 +0000] [6220] [INFO] Starting gunicorn 19.6.0
+[2016-11-25 18:28:06 +0000] [6220] [INFO] Listening at: http://0.0.0.0:8080 (6220)
+[2016-11-25 18:28:06 +0000] [6220] [INFO] Using worker: sync
+[2016-11-25 18:28:06 +0000] [6225] [INFO] Booting worker with pid: 6225
+[2016-11-25 18:28:06 +0000] [6234] [INFO] Booting worker with pid: 6234
+[2016-11-25 18:28:06 +0000] [6237] [INFO] Booting worker with pid: 6237
+[2016-11-25 18:28:06 +0000] [6243] [INFO] Booting worker with pid: 6243
+[2016-11-25 18:28:51,582] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 64, in download
+    file = fs.get(ObjectId(file_id))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 110, in __init__
+    self.__validate(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 206, in __validate
+    _raise_invalid_id(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 52, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+[2016-11-25 18:30:09 +0000] [6305] [INFO] Starting gunicorn 19.6.0
+[2016-11-25 18:30:09 +0000] [6305] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:30:09 +0000] [6305] [ERROR] Retrying in 1 second.
+[2016-11-25 18:30:10 +0000] [6305] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:30:10 +0000] [6305] [ERROR] Retrying in 1 second.
+[2016-11-25 18:30:11 +0000] [6305] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:30:11 +0000] [6305] [ERROR] Retrying in 1 second.
+[2016-11-25 18:30:12 +0000] [6305] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:30:12 +0000] [6305] [ERROR] Retrying in 1 second.
+[2016-11-25 18:30:13 +0000] [6305] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:30:13 +0000] [6305] [ERROR] Retrying in 1 second.
+[2016-11-25 18:30:14 +0000] [6305] [ERROR] Can't connect to ('0.0.0.0', 8080)
+[2016-11-25 18:31:40 +0000] [6338] [INFO] Starting gunicorn 19.6.0
+[2016-11-25 18:31:40 +0000] [6338] [INFO] Listening at: http://0.0.0.0:8080 (6338)
+[2016-11-25 18:31:40 +0000] [6338] [INFO] Using worker: sync
+[2016-11-25 18:31:40 +0000] [6343] [INFO] Booting worker with pid: 6343
+[2016-11-25 18:31:40 +0000] [6346] [INFO] Booting worker with pid: 6346
+[2016-11-25 18:31:40 +0000] [6347] [INFO] Booting worker with pid: 6347
+[2016-11-25 18:31:40 +0000] [6358] [INFO] Booting worker with pid: 6358
+[2016-11-25 18:31:50 +0000] [6395] [INFO] Starting gunicorn 19.6.0
+[2016-11-25 18:31:50 +0000] [6395] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:31:50 +0000] [6395] [ERROR] Retrying in 1 second.
+[2016-11-25 18:31:51 +0000] [6395] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:31:51 +0000] [6395] [ERROR] Retrying in 1 second.
+[2016-11-25 18:31:52 +0000] [6395] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:31:52 +0000] [6395] [ERROR] Retrying in 1 second.
+[2016-11-25 18:31:53 +0000] [6395] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:31:53 +0000] [6395] [ERROR] Retrying in 1 second.
+[2016-11-25 18:31:54 +0000] [6395] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:31:54 +0000] [6395] [ERROR] Retrying in 1 second.
+[2016-11-25 18:31:55 +0000] [6395] [ERROR] Can't connect to ('0.0.0.0', 8080)
+[2016-11-25 18:32:37 +0000] [6413] [INFO] Starting gunicorn 19.6.0
+[2016-11-25 18:32:37 +0000] [6413] [INFO] Listening at: http://0.0.0.0:8080 (6413)
+[2016-11-25 18:32:37 +0000] [6413] [INFO] Using worker: sync
+[2016-11-25 18:32:37 +0000] [6418] [INFO] Booting worker with pid: 6418
+[2016-11-25 18:32:37 +0000] [6419] [INFO] Booting worker with pid: 6419
+[2016-11-25 18:32:37 +0000] [6424] [INFO] Booting worker with pid: 6424
+[2016-11-25 18:32:37 +0000] [6439] [INFO] Booting worker with pid: 6439
+[2016-11-25 18:32:40 +0000] [6456] [INFO] Starting gunicorn 19.6.0
+[2016-11-25 18:32:40 +0000] [6456] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:32:40 +0000] [6456] [ERROR] Retrying in 1 second.
+[2016-11-25 18:32:41 +0000] [6456] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:32:41 +0000] [6456] [ERROR] Retrying in 1 second.
+[2016-11-25 18:32:42 +0000] [6456] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:32:42 +0000] [6456] [ERROR] Retrying in 1 second.
+[2016-11-25 18:32:43 +0000] [6456] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:32:43 +0000] [6456] [ERROR] Retrying in 1 second.
+[2016-11-25 18:32:44 +0000] [6456] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:32:44 +0000] [6456] [ERROR] Retrying in 1 second.
+[2016-11-25 18:32:45 +0000] [6456] [ERROR] Can't connect to ('0.0.0.0', 8080)
+[2016-11-25 18:33:17 +0000] [6496] [INFO] Starting gunicorn 19.6.0
+[2016-11-25 18:33:17 +0000] [6496] [INFO] Listening at: http://0.0.0.0:8080 (6496)
+[2016-11-25 18:33:17 +0000] [6496] [INFO] Using worker: sync
+[2016-11-25 18:33:17 +0000] [6501] [INFO] Booting worker with pid: 6501
+[2016-11-25 18:33:17 +0000] [6510] [INFO] Booting worker with pid: 6510
+[2016-11-25 18:33:17 +0000] [6519] [INFO] Booting worker with pid: 6519
+[2016-11-25 18:33:17 +0000] [6528] [INFO] Booting worker with pid: 6528
+[2016-11-25 18:33:20 +0000] [6539] [INFO] Starting gunicorn 19.6.0
+[2016-11-25 18:33:20 +0000] [6539] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:33:20 +0000] [6539] [ERROR] Retrying in 1 second.
+[2016-11-25 18:33:21 +0000] [6539] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:33:21 +0000] [6539] [ERROR] Retrying in 1 second.
+[2016-11-25 18:33:22 +0000] [6539] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:33:22 +0000] [6539] [ERROR] Retrying in 1 second.
+[2016-11-25 18:33:23 +0000] [6539] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:33:23 +0000] [6539] [ERROR] Retrying in 1 second.
+[2016-11-25 18:33:24 +0000] [6539] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:33:24 +0000] [6539] [ERROR] Retrying in 1 second.
+[2016-11-25 18:33:25 +0000] [6539] [ERROR] Can't connect to ('0.0.0.0', 8080)
+[2016-11-25 18:36:24 +0000] [6673] [INFO] Starting gunicorn 19.6.0
+[2016-11-25 18:36:24 +0000] [6673] [INFO] Listening at: http://0.0.0.0:8080 (6673)
+[2016-11-25 18:36:24 +0000] [6673] [INFO] Using worker: sync
+[2016-11-25 18:36:24 +0000] [6678] [INFO] Booting worker with pid: 6678
+[2016-11-25 18:36:24 +0000] [6687] [INFO] Booting worker with pid: 6687
+[2016-11-25 18:36:24 +0000] [6696] [INFO] Booting worker with pid: 6696
+[2016-11-25 18:36:24 +0000] [6697] [INFO] Booting worker with pid: 6697
+[2016-11-25 18:36:26 +0000] [6716] [INFO] Starting gunicorn 19.6.0
+[2016-11-25 18:36:26 +0000] [6716] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:36:26 +0000] [6716] [ERROR] Retrying in 1 second.
+[2016-11-25 18:36:27 +0000] [6716] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:36:27 +0000] [6716] [ERROR] Retrying in 1 second.
+[2016-11-25 18:36:28 +0000] [6716] [INFO] Listening at: http://0.0.0.0:8080 (6716)
+[2016-11-25 18:36:28 +0000] [6716] [INFO] Using worker: sync
+[2016-11-25 18:36:28 +0000] [6723] [INFO] Booting worker with pid: 6723
+[2016-11-25 18:36:28 +0000] [6732] [INFO] Booting worker with pid: 6732
+[2016-11-25 18:36:28 +0000] [6733] [INFO] Booting worker with pid: 6733
+[2016-11-25 18:36:28 +0000] [6746] [INFO] Booting worker with pid: 6746
+[2016-11-25 18:44:01 +0000] [7284] [INFO] Starting gunicorn 19.6.0
+[2016-11-25 18:44:01 +0000] [7284] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:44:01 +0000] [7284] [ERROR] Retrying in 1 second.
+[2016-11-25 18:44:02 +0000] [7284] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:44:02 +0000] [7284] [ERROR] Retrying in 1 second.
+[2016-11-25 18:44:03 +0000] [7284] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:44:03 +0000] [7284] [ERROR] Retrying in 1 second.
+[2016-11-25 18:44:04 +0000] [7284] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:44:04 +0000] [7284] [ERROR] Retrying in 1 second.
+[2016-11-25 18:44:05 +0000] [7291] [INFO] Starting gunicorn 19.6.0
+[2016-11-25 18:44:05 +0000] [7291] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:44:05 +0000] [7291] [ERROR] Retrying in 1 second.
+[2016-11-25 18:44:06 +0000] [7291] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:44:06 +0000] [7291] [ERROR] Retrying in 1 second.
+[2016-11-25 18:44:07 +0000] [7291] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:44:07 +0000] [7291] [ERROR] Retrying in 1 second.
+[2016-11-25 18:44:08 +0000] [7291] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:44:08 +0000] [7291] [ERROR] Retrying in 1 second.
+[2016-11-25 18:44:09 +0000] [7291] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:44:09 +0000] [7291] [ERROR] Retrying in 1 second.
+[2016-11-25 18:44:10 +0000] [7291] [ERROR] Can't connect to ('0.0.0.0', 8080)
+[2016-11-25 18:50:03 +0000] [7597] [INFO] Starting gunicorn 19.6.0
+[2016-11-25 18:50:03 +0000] [7597] [INFO] Listening at: http://0.0.0.0:8080 (7597)
+[2016-11-25 18:50:03 +0000] [7597] [INFO] Using worker: sync
+[2016-11-25 18:50:03 +0000] [7602] [INFO] Booting worker with pid: 7602
+[2016-11-25 18:50:03 +0000] [7611] [INFO] Booting worker with pid: 7611
+[2016-11-25 18:50:03 +0000] [7620] [INFO] Booting worker with pid: 7620
+[2016-11-25 18:50:03 +0000] [7623] [INFO] Booting worker with pid: 7623
+[2016-11-25 18:50:06 +0000] [7640] [INFO] Starting gunicorn 19.6.0
+[2016-11-25 18:50:06 +0000] [7640] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:50:06 +0000] [7640] [ERROR] Retrying in 1 second.
+[2016-11-25 18:50:07 +0000] [7640] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:50:07 +0000] [7640] [ERROR] Retrying in 1 second.
+[2016-11-25 18:50:08 +0000] [7640] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:50:08 +0000] [7640] [ERROR] Retrying in 1 second.
+[2016-11-25 18:50:09 +0000] [7640] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:50:09 +0000] [7640] [ERROR] Retrying in 1 second.
+[2016-11-25 18:50:10 +0000] [7640] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:50:10 +0000] [7640] [ERROR] Retrying in 1 second.
+[2016-11-25 18:50:11 +0000] [7640] [ERROR] Can't connect to ('0.0.0.0', 8080)
+[2016-11-25 18:50:45 +0000] [7725] [INFO] Starting gunicorn 19.6.0
+[2016-11-25 18:50:45 +0000] [7725] [INFO] Listening at: http://0.0.0.0:8080 (7725)
+[2016-11-25 18:50:45 +0000] [7725] [INFO] Using worker: sync
+[2016-11-25 18:50:45 +0000] [7730] [INFO] Booting worker with pid: 7730
+[2016-11-25 18:50:45 +0000] [7731] [INFO] Booting worker with pid: 7731
+[2016-11-25 18:50:45 +0000] [7732] [INFO] Booting worker with pid: 7732
+[2016-11-25 18:50:45 +0000] [7757] [INFO] Booting worker with pid: 7757
+[2016-11-25 18:50:47 +0000] [7770] [INFO] Starting gunicorn 19.6.0
+[2016-11-25 18:50:47 +0000] [7770] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:50:47 +0000] [7770] [ERROR] Retrying in 1 second.
+[2016-11-25 18:50:48 +0000] [7777] [INFO] Starting gunicorn 19.6.0
+[2016-11-25 18:50:48 +0000] [7777] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:50:48 +0000] [7777] [ERROR] Retrying in 1 second.
+[2016-11-25 18:50:49 +0000] [7777] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:50:49 +0000] [7777] [ERROR] Retrying in 1 second.
+[2016-11-25 18:50:50 +0000] [7777] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:50:50 +0000] [7777] [ERROR] Retrying in 1 second.
+[2016-11-25 18:50:51 +0000] [7777] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:50:51 +0000] [7777] [ERROR] Retrying in 1 second.
+[2016-11-25 18:50:52 +0000] [7777] [INFO] Listening at: http://0.0.0.0:8080 (7777)
+[2016-11-25 18:50:52 +0000] [7777] [INFO] Using worker: sync
+[2016-11-25 18:50:52 +0000] [7783] [INFO] Booting worker with pid: 7783
+[2016-11-25 18:50:52 +0000] [7792] [INFO] Booting worker with pid: 7792
+[2016-11-25 18:50:52 +0000] [7795] [INFO] Booting worker with pid: 7795
+[2016-11-25 18:50:53 +0000] [7802] [INFO] Booting worker with pid: 7802
+[2016-11-25 18:58:48 +0000] [8515] [INFO] Starting gunicorn 19.6.0
+[2016-11-25 18:58:48 +0000] [8515] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:58:48 +0000] [8515] [ERROR] Retrying in 1 second.
+[2016-11-25 18:58:49 +0000] [8515] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:58:49 +0000] [8515] [ERROR] Retrying in 1 second.
+[2016-11-25 18:58:50 +0000] [8515] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:58:50 +0000] [8515] [ERROR] Retrying in 1 second.
+[2016-11-25 18:58:51 +0000] [8515] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:58:51 +0000] [8515] [ERROR] Retrying in 1 second.
+[2016-11-25 18:58:52 +0000] [8515] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 18:58:52 +0000] [8515] [ERROR] Retrying in 1 second.
+[2016-11-25 18:58:53 +0000] [8515] [ERROR] Can't connect to ('0.0.0.0', 8080)
+[2016-11-25 19:03:49 +0000] [8763] [INFO] Starting gunicorn 19.6.0
+[2016-11-25 19:03:49 +0000] [8763] [INFO] Listening at: http://0.0.0.0:8080 (8763)
+[2016-11-25 19:03:49 +0000] [8763] [INFO] Using worker: sync
+[2016-11-25 19:03:49 +0000] [8768] [INFO] Booting worker with pid: 8768
+[2016-11-25 19:03:49 +0000] [8771] [INFO] Booting worker with pid: 8771
+[2016-11-25 19:03:49 +0000] [8779] [INFO] Booting worker with pid: 8779
+[2016-11-25 19:03:50 +0000] [8795] [INFO] Booting worker with pid: 8795
+[2016-11-25 19:03:52 +0000] [8806] [INFO] Starting gunicorn 19.6.0
+[2016-11-25 19:03:52 +0000] [8806] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 19:03:52 +0000] [8806] [ERROR] Retrying in 1 second.
+[2016-11-25 19:03:53 +0000] [8806] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 19:03:53 +0000] [8806] [ERROR] Retrying in 1 second.
+[2016-11-25 19:03:54 +0000] [8806] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 19:03:54 +0000] [8806] [ERROR] Retrying in 1 second.
+[2016-11-25 19:03:55 +0000] [8806] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 19:03:55 +0000] [8806] [ERROR] Retrying in 1 second.
+[2016-11-25 19:03:56 +0000] [8806] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-25 19:03:56 +0000] [8806] [ERROR] Retrying in 1 second.
+[2016-11-25 19:03:57 +0000] [8806] [ERROR] Can't connect to ('0.0.0.0', 8080)
+[2016-11-28 08:43:15 +0000] [4291] [INFO] Starting gunicorn 19.6.0
+[2016-11-28 08:43:15 +0000] [4291] [INFO] Listening at: http://0.0.0.0:8080 (4291)
+[2016-11-28 08:43:15 +0000] [4291] [INFO] Using worker: sync
+[2016-11-28 08:43:15 +0000] [4296] [INFO] Booting worker with pid: 4296
+[2016-11-28 08:43:15 +0000] [4297] [INFO] Booting worker with pid: 4297
+[2016-11-28 08:43:15 +0000] [4298] [INFO] Booting worker with pid: 4298
+[2016-11-28 08:43:15 +0000] [4305] [INFO] Booting worker with pid: 4305
+[2016-11-28 08:44:45,247] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 64, in download
+    file = fs.get(ObjectId(file_id))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 110, in __init__
+    self.__validate(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 206, in __validate
+    _raise_invalid_id(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 52, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+[2016-11-28 08:51:57,131] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 64, in download
+    file = fs.get(ObjectId(file_id))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 110, in __init__
+    self.__validate(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 206, in __validate
+    _raise_invalid_id(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 52, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+[2016-11-28 08:52:03,711] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 64, in download
+    file = fs.get(ObjectId(file_id))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 110, in __init__
+    self.__validate(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 206, in __validate
+    _raise_invalid_id(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 52, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+[2016-11-28 08:52:05,849] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 64, in download
+    file = fs.get(ObjectId(file_id))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 110, in __init__
+    self.__validate(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 206, in __validate
+    _raise_invalid_id(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 52, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+[2016-11-28 08:52:06,985] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 64, in download
+    file = fs.get(ObjectId(file_id))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 110, in __init__
+    self.__validate(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 206, in __validate
+    _raise_invalid_id(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 52, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+[2016-11-28 08:52:08,045] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 64, in download
+    file = fs.get(ObjectId(file_id))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 110, in __init__
+    self.__validate(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 206, in __validate
+    _raise_invalid_id(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 52, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+[2016-11-28 08:52:09,249] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 64, in download
+    file = fs.get(ObjectId(file_id))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 110, in __init__
+    self.__validate(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 206, in __validate
+    _raise_invalid_id(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 52, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+[2016-11-28 08:52:11,409] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 64, in download
+    file = fs.get(ObjectId(file_id))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 110, in __init__
+    self.__validate(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 206, in __validate
+    _raise_invalid_id(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 52, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+[2016-11-28 08:52:14,054] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 64, in download
+    file = fs.get(ObjectId(file_id))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 110, in __init__
+    self.__validate(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 206, in __validate
+    _raise_invalid_id(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 52, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+[2016-11-28 09:04:48,543] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 64, in download
+    file = fs.get(ObjectId(file_id))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 110, in __init__
+    self.__validate(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 206, in __validate
+    _raise_invalid_id(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 52, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+[2016-11-28 10:47:49,548] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 64, in download
+    file = fs.get(ObjectId(file_id))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 110, in __init__
+    self.__validate(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 206, in __validate
+    _raise_invalid_id(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 52, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+[2016-11-28 10:47:49,562] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 64, in download
+    file = fs.get(ObjectId(file_id))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 110, in __init__
+    self.__validate(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 206, in __validate
+    _raise_invalid_id(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 52, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+[2016-11-28 19:16:52 +0000] [18896] [INFO] Booting worker with pid: 18896
+[2016-11-28 19:16:52 +0000] [18897] [INFO] Booting worker with pid: 18897
+[2016-11-30 08:47:18 +0000] [4316] [INFO] Starting gunicorn 19.6.0
+[2016-11-30 08:47:18 +0000] [4316] [INFO] Listening at: http://0.0.0.0:8080 (4316)
+[2016-11-30 08:47:18 +0000] [4316] [INFO] Using worker: sync
+[2016-11-30 08:47:18 +0000] [4321] [INFO] Booting worker with pid: 4321
+[2016-11-30 08:47:18 +0000] [4324] [INFO] Booting worker with pid: 4324
+[2016-11-30 08:47:18 +0000] [4339] [INFO] Booting worker with pid: 4339
+[2016-11-30 08:47:18 +0000] [4348] [INFO] Booting worker with pid: 4348
+[2016-11-30 08:54:15,587] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 92, in upload
+    tag1 = c[1]
+IndexError: list index out of range
+[2016-11-30 08:54:23,742] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 92, in upload
+    tag1 = c[1]
+IndexError: list index out of range
+[2016-11-30 09:05:45 +0000] [6012] [INFO] Starting gunicorn 19.6.0
+[2016-11-30 09:05:45 +0000] [6012] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 09:05:45 +0000] [6012] [ERROR] Retrying in 1 second.
+[2016-11-30 09:05:46 +0000] [6012] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 09:05:46 +0000] [6012] [ERROR] Retrying in 1 second.
+[2016-11-30 09:05:47 +0000] [6012] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 09:05:47 +0000] [6012] [ERROR] Retrying in 1 second.
+[2016-11-30 09:05:48 +0000] [6012] [INFO] Listening at: http://0.0.0.0:8080 (6012)
+[2016-11-30 09:05:48 +0000] [6012] [INFO] Using worker: sync
+[2016-11-30 09:05:48 +0000] [6022] [INFO] Booting worker with pid: 6022
+[2016-11-30 09:05:48 +0000] [6026] [INFO] Booting worker with pid: 6026
+[2016-11-30 09:05:48 +0000] [6035] [INFO] Booting worker with pid: 6035
+[2016-11-30 09:05:48 +0000] [6050] [INFO] Booting worker with pid: 6050
+[2016-11-30 09:08:13,283] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 69, in download
+    file = fs.get(ObjectId(file_id))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 110, in __init__
+    self.__validate(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 206, in __validate
+    _raise_invalid_id(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 52, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+[2016-11-30 09:11:04,855] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 69, in download
+    file = fs.get(ObjectId(file_id))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 110, in __init__
+    self.__validate(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 206, in __validate
+    _raise_invalid_id(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 52, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+[2016-11-30 09:15:55 +0000] [7295] [INFO] Starting gunicorn 19.6.0
+[2016-11-30 09:15:55 +0000] [7295] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 09:15:55 +0000] [7295] [ERROR] Retrying in 1 second.
+[2016-11-30 09:15:56 +0000] [7295] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 09:15:56 +0000] [7295] [ERROR] Retrying in 1 second.
+[2016-11-30 09:15:57 +0000] [7295] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 09:15:57 +0000] [7295] [ERROR] Retrying in 1 second.
+[2016-11-30 09:15:58 +0000] [7295] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 09:15:58 +0000] [7295] [ERROR] Retrying in 1 second.
+[2016-11-30 09:15:59 +0000] [7295] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 09:15:59 +0000] [7295] [ERROR] Retrying in 1 second.
+[2016-11-30 09:16:00 +0000] [7295] [ERROR] Can't connect to ('0.0.0.0', 8080)
+[2016-11-30 09:19:32 +0000] [7576] [INFO] Starting gunicorn 19.6.0
+[2016-11-30 09:19:32 +0000] [7576] [INFO] Listening at: http://0.0.0.0:8080 (7576)
+[2016-11-30 09:19:32 +0000] [7576] [INFO] Using worker: sync
+[2016-11-30 09:19:32 +0000] [7581] [INFO] Booting worker with pid: 7581
+[2016-11-30 09:19:33 +0000] [7590] [INFO] Booting worker with pid: 7590
+[2016-11-30 09:19:33 +0000] [7599] [INFO] Booting worker with pid: 7599
+[2016-11-30 09:19:33 +0000] [7608] [INFO] Booting worker with pid: 7608
+[2016-11-30 09:19:49,621] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 69, in download
+    file = fs.get(ObjectId(file_id))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 110, in __init__
+    self.__validate(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 206, in __validate
+    _raise_invalid_id(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 52, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+[2016-11-30 09:21:39 +0000] [7954] [INFO] Starting gunicorn 19.6.0
+[2016-11-30 09:21:39 +0000] [7954] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 09:21:39 +0000] [7954] [ERROR] Retrying in 1 second.
+[2016-11-30 09:21:40 +0000] [7954] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 09:21:40 +0000] [7954] [ERROR] Retrying in 1 second.
+[2016-11-30 09:21:41 +0000] [7954] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 09:21:41 +0000] [7954] [ERROR] Retrying in 1 second.
+[2016-11-30 09:21:42 +0000] [7954] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 09:21:42 +0000] [7954] [ERROR] Retrying in 1 second.
+[2016-11-30 09:21:43 +0000] [7954] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 09:21:43 +0000] [7954] [ERROR] Retrying in 1 second.
+[2016-11-30 09:21:44 +0000] [7954] [ERROR] Can't connect to ('0.0.0.0', 8080)
+[2016-11-30 09:27:06 +0000] [8447] [INFO] Starting gunicorn 19.6.0
+[2016-11-30 09:27:06 +0000] [8447] [INFO] Listening at: http://0.0.0.0:8080 (8447)
+[2016-11-30 09:27:06 +0000] [8447] [INFO] Using worker: sync
+[2016-11-30 09:27:06 +0000] [8452] [INFO] Booting worker with pid: 8452
+[2016-11-30 09:27:06 +0000] [8455] [INFO] Booting worker with pid: 8455
+[2016-11-30 09:27:06 +0000] [8456] [INFO] Booting worker with pid: 8456
+[2016-11-30 09:27:06 +0000] [8463] [INFO] Booting worker with pid: 8463
+[2016-11-30 09:27:10 +0000] [8490] [INFO] Starting gunicorn 19.6.0
+[2016-11-30 09:27:10 +0000] [8490] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 09:27:10 +0000] [8490] [ERROR] Retrying in 1 second.
+[2016-11-30 09:27:11 +0000] [8490] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 09:27:11 +0000] [8490] [ERROR] Retrying in 1 second.
+[2016-11-30 09:27:12 +0000] [8490] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 09:27:12 +0000] [8490] [ERROR] Retrying in 1 second.
+[2016-11-30 09:27:13 +0000] [8490] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 09:27:13 +0000] [8490] [ERROR] Retrying in 1 second.
+[2016-11-30 09:27:14 +0000] [8490] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 09:27:14 +0000] [8490] [ERROR] Retrying in 1 second.
+[2016-11-30 09:27:15 +0000] [8490] [ERROR] Can't connect to ('0.0.0.0', 8080)
+[2016-11-30 09:51:16 +0000] [10430] [INFO] Starting gunicorn 19.6.0
+[2016-11-30 09:51:16 +0000] [10430] [INFO] Listening at: http://0.0.0.0:8080 (10430)
+[2016-11-30 09:51:16 +0000] [10430] [INFO] Using worker: sync
+[2016-11-30 09:51:16 +0000] [10435] [INFO] Booting worker with pid: 10435
+[2016-11-30 09:51:16 +0000] [10438] [INFO] Booting worker with pid: 10438
+[2016-11-30 09:51:16 +0000] [10439] [INFO] Booting worker with pid: 10439
+[2016-11-30 09:51:16 +0000] [10448] [INFO] Booting worker with pid: 10448
+[2016-11-30 09:51:19 +0000] [10477] [INFO] Starting gunicorn 19.6.0
+[2016-11-30 09:51:19 +0000] [10477] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 09:51:19 +0000] [10477] [ERROR] Retrying in 1 second.
+[2016-11-30 09:51:20 +0000] [10477] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 09:51:20 +0000] [10477] [ERROR] Retrying in 1 second.
+[2016-11-30 09:51:21 +0000] [10477] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 09:51:21 +0000] [10477] [ERROR] Retrying in 1 second.
+[2016-11-30 09:51:22 +0000] [10477] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 09:51:22 +0000] [10477] [ERROR] Retrying in 1 second.
+[2016-11-30 09:51:23 +0000] [10477] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 09:51:23 +0000] [10477] [ERROR] Retrying in 1 second.
+[2016-11-30 09:51:24 +0000] [10477] [ERROR] Can't connect to ('0.0.0.0', 8080)
+[2016-11-30 09:52:09 +0000] [10601] [INFO] Starting gunicorn 19.6.0
+[2016-11-30 09:52:09 +0000] [10601] [INFO] Listening at: http://0.0.0.0:8080 (10601)
+[2016-11-30 09:52:09 +0000] [10601] [INFO] Using worker: sync
+[2016-11-30 09:52:09 +0000] [10606] [INFO] Booting worker with pid: 10606
+[2016-11-30 09:52:09 +0000] [10609] [INFO] Booting worker with pid: 10609
+[2016-11-30 09:52:09 +0000] [10618] [INFO] Booting worker with pid: 10618
+[2016-11-30 09:52:10 +0000] [10625] [INFO] Booting worker with pid: 10625
+[2016-11-30 09:52:12 +0000] [10649] [INFO] Starting gunicorn 19.6.0
+[2016-11-30 09:52:12 +0000] [10649] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 09:52:12 +0000] [10649] [ERROR] Retrying in 1 second.
+[2016-11-30 09:52:13 +0000] [10649] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 09:52:13 +0000] [10649] [ERROR] Retrying in 1 second.
+[2016-11-30 09:52:14 +0000] [10649] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 09:52:14 +0000] [10649] [ERROR] Retrying in 1 second.
+[2016-11-30 09:52:15 +0000] [10649] [INFO] Listening at: http://0.0.0.0:8080 (10649)
+[2016-11-30 09:52:15 +0000] [10649] [INFO] Using worker: sync
+[2016-11-30 09:52:15 +0000] [10672] [INFO] Booting worker with pid: 10672
+[2016-11-30 09:52:15 +0000] [10681] [INFO] Booting worker with pid: 10681
+[2016-11-30 09:52:15 +0000] [10682] [INFO] Booting worker with pid: 10682
+[2016-11-30 09:52:15 +0000] [10687] [INFO] Booting worker with pid: 10687
+[2016-11-30 09:52:37,799] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 69, in download
+    file = fs.get(ObjectId(file_id))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 110, in __init__
+    self.__validate(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 206, in __validate
+    _raise_invalid_id(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 52, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+[2016-11-30 09:54:51 +0000] [11026] [INFO] Starting gunicorn 19.6.0
+[2016-11-30 09:54:51 +0000] [11026] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 09:54:51 +0000] [11026] [ERROR] Retrying in 1 second.
+[2016-11-30 09:54:52 +0000] [11026] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 09:54:52 +0000] [11026] [ERROR] Retrying in 1 second.
+[2016-11-30 09:54:53 +0000] [11026] [INFO] Listening at: http://0.0.0.0:8080 (11026)
+[2016-11-30 09:54:53 +0000] [11026] [INFO] Using worker: sync
+[2016-11-30 09:54:53 +0000] [11035] [INFO] Booting worker with pid: 11035
+[2016-11-30 09:54:53 +0000] [11044] [INFO] Booting worker with pid: 11044
+[2016-11-30 09:54:53 +0000] [11045] [INFO] Booting worker with pid: 11045
+[2016-11-30 09:54:53 +0000] [11048] [INFO] Booting worker with pid: 11048
+[2016-11-30 09:55:10,514] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 69, in download
+    file = fs.get(ObjectId(file_id))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 110, in __init__
+    self.__validate(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 206, in __validate
+    _raise_invalid_id(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 52, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+[2016-11-30 09:55:40 +0000] [11026] [INFO] Handling signal: term
+[2016-11-30 09:55:40 +0000] [11048] [INFO] Worker exiting (pid: 11048)
+[2016-11-30 09:55:40 +0000] [11045] [INFO] Worker exiting (pid: 11045)
+[2016-11-30 09:55:40 +0000] [11044] [INFO] Worker exiting (pid: 11044)
+[2016-11-30 09:55:40 +0000] [11035] [INFO] Worker exiting (pid: 11035)
+[2016-11-30 09:55:41 +0000] [11185] [INFO] Starting gunicorn 19.6.0
+[2016-11-30 09:55:41 +0000] [11185] [INFO] Listening at: http://0.0.0.0:8080 (11185)
+[2016-11-30 09:55:41 +0000] [11185] [INFO] Using worker: sync
+[2016-11-30 09:55:41 +0000] [11190] [INFO] Booting worker with pid: 11190
+[2016-11-30 09:55:41 +0000] [11199] [INFO] Booting worker with pid: 11199
+[2016-11-30 09:55:41 +0000] [11208] [INFO] Booting worker with pid: 11208
+[2016-11-30 09:55:41 +0000] [11211] [INFO] Booting worker with pid: 11211
+[2016-11-30 09:55:55,403] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 69, in download
+    file = fs.get(ObjectId(file_id))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 110, in __init__
+    self.__validate(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 206, in __validate
+    _raise_invalid_id(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 52, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+[2016-11-30 10:00:26 +0000] [11694] [INFO] Starting gunicorn 19.6.0
+[2016-11-30 10:00:26 +0000] [11694] [INFO] Listening at: http://0.0.0.0:8080 (11694)
+[2016-11-30 10:00:26 +0000] [11694] [INFO] Using worker: sync
+[2016-11-30 10:00:26 +0000] [11699] [INFO] Booting worker with pid: 11699
+[2016-11-30 10:00:26 +0000] [11704] [INFO] Booting worker with pid: 11704
+[2016-11-30 10:00:26 +0000] [11717] [INFO] Booting worker with pid: 11717
+[2016-11-30 10:00:26 +0000] [11726] [INFO] Booting worker with pid: 11726
+[2016-11-30 10:00:45,704] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 69, in download
+    file = fs.get(ObjectId(file_id))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 110, in __init__
+    self.__validate(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 206, in __validate
+    _raise_invalid_id(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 52, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+[2016-11-30 10:01:36,287] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 69, in download
+    file = fs.get(ObjectId(file_id))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 110, in __init__
+    self.__validate(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 206, in __validate
+    _raise_invalid_id(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 52, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+[2016-11-30 10:07:39 +0000] [12444] [INFO] Starting gunicorn 19.6.0
+[2016-11-30 10:07:39 +0000] [12444] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 10:07:39 +0000] [12444] [ERROR] Retrying in 1 second.
+[2016-11-30 10:07:40 +0000] [12444] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 10:07:40 +0000] [12444] [ERROR] Retrying in 1 second.
+[2016-11-30 10:07:41 +0000] [12444] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 10:07:41 +0000] [12444] [ERROR] Retrying in 1 second.
+[2016-11-30 10:07:42 +0000] [12444] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 10:07:42 +0000] [12444] [ERROR] Retrying in 1 second.
+[2016-11-30 10:07:43 +0000] [12444] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 10:07:43 +0000] [12444] [ERROR] Retrying in 1 second.
+[2016-11-30 10:07:44 +0000] [12444] [ERROR] Can't connect to ('0.0.0.0', 8080)
+[2016-11-30 10:14:57 +0000] [2537] [INFO] Starting gunicorn 19.6.0
+[2016-11-30 10:14:57 +0000] [2537] [INFO] Listening at: http://0.0.0.0:8080 (2537)
+[2016-11-30 10:14:57 +0000] [2537] [INFO] Using worker: sync
+[2016-11-30 10:14:57 +0000] [2542] [INFO] Booting worker with pid: 2542
+[2016-11-30 10:14:58 +0000] [2545] [INFO] Booting worker with pid: 2545
+[2016-11-30 10:14:58 +0000] [2552] [INFO] Booting worker with pid: 2552
+[2016-11-30 10:14:58 +0000] [2559] [INFO] Booting worker with pid: 2559
+[2016-11-30 10:15:39,208] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 42, in index
+    count = files.count()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/cursor.py", line 708, in count
+    return self.__collection._count(cmd)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/collection.py", line 1202, in _count
+    with self._socket_for_reads() as (sock_info, slave_ok):
+  File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/mongo_client.py", line 798, in _socket_for_reads
+    with self._get_socket(read_preference) as sock_info:
+  File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/mongo_client.py", line 762, in _get_socket
+    server = self._get_topology().select_server(selector)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/topology.py", line 210, in select_server
+    address))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/topology.py", line 186, in select_servers
+    self._error_message(selector))
+ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused
+[2016-11-30 10:15:40,643] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 42, in index
+    count = files.count()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/cursor.py", line 708, in count
+    return self.__collection._count(cmd)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/collection.py", line 1202, in _count
+    with self._socket_for_reads() as (sock_info, slave_ok):
+  File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/mongo_client.py", line 798, in _socket_for_reads
+    with self._get_socket(read_preference) as sock_info:
+  File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/mongo_client.py", line 762, in _get_socket
+    server = self._get_topology().select_server(selector)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/topology.py", line 210, in select_server
+    address))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/topology.py", line 186, in select_servers
+    self._error_message(selector))
+ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused
+[2016-11-30 10:16:19,673] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 69, in download
+    file = fs.get(ObjectId(file_id))
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 110, in __init__
+    self.__validate(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 206, in __validate
+    _raise_invalid_id(oid)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 52, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+[2016-11-30 10:21:18 +0000] [3617] [INFO] Starting gunicorn 19.6.0
+[2016-11-30 10:21:18 +0000] [3617] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 10:21:18 +0000] [3617] [ERROR] Retrying in 1 second.
+[2016-11-30 10:21:19 +0000] [3617] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 10:21:19 +0000] [3617] [ERROR] Retrying in 1 second.
+[2016-11-30 10:21:20 +0000] [3617] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 10:21:20 +0000] [3617] [ERROR] Retrying in 1 second.
+[2016-11-30 10:21:21 +0000] [3617] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 10:21:21 +0000] [3617] [ERROR] Retrying in 1 second.
+[2016-11-30 10:21:22 +0000] [3617] [INFO] Listening at: http://0.0.0.0:8080 (3617)
+[2016-11-30 10:21:22 +0000] [3617] [INFO] Using worker: sync
+[2016-11-30 10:21:22 +0000] [3641] [INFO] Booting worker with pid: 3641
+[2016-11-30 10:21:22 +0000] [3642] [INFO] Booting worker with pid: 3642
+[2016-11-30 10:21:22 +0000] [3659] [INFO] Booting worker with pid: 3659
+[2016-11-30 10:21:22 +0000] [3660] [INFO] Booting worker with pid: 3660
+[2016-11-30 10:36:02 +0000] [4906] [INFO] Starting gunicorn 19.6.0
+[2016-11-30 10:36:02 +0000] [4906] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 10:36:02 +0000] [4906] [ERROR] Retrying in 1 second.
+[2016-11-30 10:36:03 +0000] [4906] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 10:36:03 +0000] [4906] [ERROR] Retrying in 1 second.
+[2016-11-30 10:36:04 +0000] [4906] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 10:36:04 +0000] [4906] [ERROR] Retrying in 1 second.
+[2016-11-30 10:36:05 +0000] [4906] [INFO] Listening at: http://0.0.0.0:8080 (4906)
+[2016-11-30 10:36:05 +0000] [4906] [INFO] Using worker: sync
+[2016-11-30 10:36:05 +0000] [4911] [INFO] Booting worker with pid: 4911
+[2016-11-30 10:36:05 +0000] [4912] [INFO] Booting worker with pid: 4912
+[2016-11-30 10:36:05 +0000] [4929] [INFO] Booting worker with pid: 4929
+[2016-11-30 10:36:05 +0000] [4938] [INFO] Booting worker with pid: 4938
+[2016-11-30 10:36:19,879] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 95, in upload
+    fs.put(file,filename=filename)
+NameError: global name 'filename' is not defined
+[2016-11-30 10:37:10 +0000] [5042] [INFO] Starting gunicorn 19.6.0
+[2016-11-30 10:37:10 +0000] [5042] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 10:37:10 +0000] [5042] [ERROR] Retrying in 1 second.
+[2016-11-30 10:37:11 +0000] [5042] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 10:37:11 +0000] [5042] [ERROR] Retrying in 1 second.
+[2016-11-30 10:37:12 +0000] [5042] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 10:37:12 +0000] [5042] [ERROR] Retrying in 1 second.
+[2016-11-30 10:37:13 +0000] [5042] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 10:37:13 +0000] [5042] [ERROR] Retrying in 1 second.
+[2016-11-30 10:37:14 +0000] [5042] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-11-30 10:37:14 +0000] [5042] [ERROR] Retrying in 1 second.
+[2016-11-30 10:37:15 +0000] [5042] [ERROR] Can't connect to ('0.0.0.0', 8080)
+[2016-11-30 10:38:09 +0000] [5169] [INFO] Starting gunicorn 19.6.0
+[2016-11-30 10:38:09 +0000] [5169] [INFO] Listening at: http://0.0.0.0:8080 (5169)
+[2016-11-30 10:38:09 +0000] [5169] [INFO] Using worker: sync
+[2016-11-30 10:38:09 +0000] [5174] [INFO] Booting worker with pid: 5174
+[2016-11-30 10:38:09 +0000] [5177] [INFO] Booting worker with pid: 5177
+[2016-11-30 10:38:09 +0000] [5187] [INFO] Booting worker with pid: 5187
+[2016-11-30 10:38:09 +0000] [5201] [INFO] Booting worker with pid: 5201
+[2016-11-30 16:00:23 +0000] [28031] [INFO] Starting gunicorn 19.6.0
+[2016-11-30 16:00:23 +0000] [28031] [INFO] Listening at: http://0.0.0.0:8080 (28031)
+[2016-11-30 16:00:23 +0000] [28031] [INFO] Using worker: sync
+[2016-11-30 16:00:23 +0000] [28036] [INFO] Booting worker with pid: 28036
+[2016-11-30 16:00:23 +0000] [28039] [INFO] Booting worker with pid: 28039
+[2016-11-30 16:00:23 +0000] [28054] [INFO] Booting worker with pid: 28054
+[2016-11-30 16:00:23 +0000] [28063] [INFO] Booting worker with pid: 28063
+[2016-11-30 16:09:31,232] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 113, in upload
+    fs.put(data,filename=filename,company_name=company_name, tag1=tag1)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gridfs/__init__.py", line 124, in put
+    grid_file.close()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gridfs/grid_file.py", line 295, in close
+    self.__flush()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gridfs/grid_file.py", line 280, in __flush
+    return self._coll.files.insert_one(self._file)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/collection.py", line 630, in insert_one
+    bypass_doc_val=bypass_document_validation),
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/collection.py", line 535, in _insert
+    check_keys, manipulate, write_concern, op_id, bypass_doc_val)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/collection.py", line 516, in _insert_one
+    check_keys=check_keys)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/pool.py", line 244, in command
+    self._raise_connection_failure(error)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/pool.py", line 372, in _raise_connection_failure
+    raise error
+InvalidStringData: strings in documents must be valid UTF-8: '1-\xc6\xf3\xd2\xb5\xd3\xaa\xd2\xb5\xd6\xb4\xd5\xd5\xa3\xa8\xb8\xb1\xb1\xbe\xa3\xa9 .jpg'
+[2016-11-30 16:10:02,943] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 113, in upload
+    fs.put(data,filename=filename,company_name=company_name, tag1=tag1)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gridfs/__init__.py", line 124, in put
+    grid_file.close()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gridfs/grid_file.py", line 295, in close
+    self.__flush()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gridfs/grid_file.py", line 280, in __flush
+    return self._coll.files.insert_one(self._file)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/collection.py", line 630, in insert_one
+    bypass_doc_val=bypass_document_validation),
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/collection.py", line 535, in _insert
+    check_keys, manipulate, write_concern, op_id, bypass_doc_val)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/collection.py", line 516, in _insert_one
+    check_keys=check_keys)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/pool.py", line 244, in command
+    self._raise_connection_failure(error)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/pool.py", line 372, in _raise_connection_failure
+    raise error
+InvalidStringData: strings in documents must be valid UTF-8: '1-\xd7\xe9\xd6\xaf\xbb\xfa\xb9\xb9\xb4\xfa\xc2\xeb\xd6\xa4.jpg'
+[2016-11-30 16:11:03,562] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 113, in upload
+    fs.put(data,filename=filename,company_name=company_name, tag1=tag1)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gridfs/__init__.py", line 124, in put
+    grid_file.close()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gridfs/grid_file.py", line 295, in close
+    self.__flush()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gridfs/grid_file.py", line 280, in __flush
+    return self._coll.files.insert_one(self._file)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/collection.py", line 630, in insert_one
+    bypass_doc_val=bypass_document_validation),
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/collection.py", line 535, in _insert
+    check_keys, manipulate, write_concern, op_id, bypass_doc_val)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/collection.py", line 516, in _insert_one
+    check_keys=check_keys)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/pool.py", line 244, in command
+    self._raise_connection_failure(error)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/pool.py", line 372, in _raise_connection_failure
+    raise error
+InvalidStringData: strings in documents must be valid UTF-8: '1-\xb7\xa8\xc8\xcb\xb4\xfa\xb1\xed-\xb3\xc2\xc7\xe4.docx'
+[2016-11-30 16:14:46,595] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 113, in upload
+    fs.put(data,filename=filename,company_name=company_name, tag1=tag1)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gridfs/__init__.py", line 124, in put
+    grid_file.close()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gridfs/grid_file.py", line 295, in close
+    self.__flush()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gridfs/grid_file.py", line 280, in __flush
+    return self._coll.files.insert_one(self._file)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/collection.py", line 630, in insert_one
+    bypass_doc_val=bypass_document_validation),
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/collection.py", line 535, in _insert
+    check_keys, manipulate, write_concern, op_id, bypass_doc_val)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/collection.py", line 516, in _insert_one
+    check_keys=check_keys)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/pool.py", line 244, in command
+    self._raise_connection_failure(error)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/pool.py", line 372, in _raise_connection_failure
+    raise error
+InvalidStringData: strings in documents must be valid UTF-8: '1-\xcb\xb0\xce\xf1\xb5\xc7\xbc\xc7\xd6\xa4.jpg'
+[2016-11-30 16:21:26,038] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 113, in upload
+    fs.put(data,filename=filename,company_name=company_name, tag1=tag1)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gridfs/__init__.py", line 124, in put
+    grid_file.close()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gridfs/grid_file.py", line 295, in close
+    self.__flush()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gridfs/grid_file.py", line 280, in __flush
+    return self._coll.files.insert_one(self._file)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/collection.py", line 630, in insert_one
+    bypass_doc_val=bypass_document_validation),
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/collection.py", line 535, in _insert
+    check_keys, manipulate, write_concern, op_id, bypass_doc_val)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/collection.py", line 516, in _insert_one
+    check_keys=check_keys)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/pool.py", line 244, in command
+    self._raise_connection_failure(error)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/pool.py", line 372, in _raise_connection_failure
+    raise error
+InvalidStringData: strings in documents must be valid UTF-8: '1-\xcb\xb0\xce\xf1\xb5\xc7\xbc\xc7\xd6\xa4.jpg'
+[2016-11-30 16:22:35,198] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 113, in upload
+    fs.put(data,filename=filename,company_name=company_name, tag1=tag1)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gridfs/__init__.py", line 124, in put
+    grid_file.close()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gridfs/grid_file.py", line 295, in close
+    self.__flush()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gridfs/grid_file.py", line 280, in __flush
+    return self._coll.files.insert_one(self._file)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/collection.py", line 630, in insert_one
+    bypass_doc_val=bypass_document_validation),
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/collection.py", line 535, in _insert
+    check_keys, manipulate, write_concern, op_id, bypass_doc_val)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/collection.py", line 516, in _insert_one
+    check_keys=check_keys)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/pool.py", line 244, in command
+    self._raise_connection_failure(error)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/pool.py", line 372, in _raise_connection_failure
+    raise error
+InvalidStringData: strings in documents must be valid UTF-8: '1-\xb7\xa8\xc8\xcb\xb4\xfa\xb1\xed-\xb3\xc2\xc7\xe4.docx'
+[2016-11-30 16:23:58,841] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 113, in upload
+    fs.put(data,filename=filename,company_name=company_name, tag1=tag1)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gridfs/__init__.py", line 124, in put
+    grid_file.close()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gridfs/grid_file.py", line 295, in close
+    self.__flush()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gridfs/grid_file.py", line 280, in __flush
+    return self._coll.files.insert_one(self._file)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/collection.py", line 630, in insert_one
+    bypass_doc_val=bypass_document_validation),
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/collection.py", line 535, in _insert
+    check_keys, manipulate, write_concern, op_id, bypass_doc_val)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/collection.py", line 516, in _insert_one
+    check_keys=check_keys)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/pool.py", line 244, in command
+    self._raise_connection_failure(error)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/pool.py", line 372, in _raise_connection_failure
+    raise error
+InvalidStringData: strings in documents must be valid UTF-8: '4-\xcf\xfa\xca\xdb\xb2\xbf\xbe\xad\xc0\xed-\xc8\xf6\xc8\xf1.docx'
+[2016-11-30 16:27:45,966] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 113, in upload
+    fs.put(data,filename=filename,company_name=company_name, tag1=tag1)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gridfs/__init__.py", line 124, in put
+    grid_file.close()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gridfs/grid_file.py", line 295, in close
+    self.__flush()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gridfs/grid_file.py", line 280, in __flush
+    return self._coll.files.insert_one(self._file)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/collection.py", line 630, in insert_one
+    bypass_doc_val=bypass_document_validation),
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/collection.py", line 535, in _insert
+    check_keys, manipulate, write_concern, op_id, bypass_doc_val)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/collection.py", line 516, in _insert_one
+    check_keys=check_keys)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/pool.py", line 244, in command
+    self._raise_connection_failure(error)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/pool.py", line 372, in _raise_connection_failure
+    raise error
+InvalidStringData: strings in documents must be valid UTF-8: '1-\xbb\xaa\xc8\xd5\xc2\xcc\xc0\xbc\xd0\xc2\xb9\xa4\xc9\xcc\xd6\xb4\xd5\xd5\xb8\xb1\xb1\xbe.jpg'
+[2016-11-30 16:28:18,780] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 113, in upload
+    fs.put(data,filename=filename,company_name=company_name, tag1=tag1)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gridfs/__init__.py", line 124, in put
+    grid_file.close()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gridfs/grid_file.py", line 295, in close
+    self.__flush()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gridfs/grid_file.py", line 280, in __flush
+    return self._coll.files.insert_one(self._file)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/collection.py", line 630, in insert_one
+    bypass_doc_val=bypass_document_validation),
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/collection.py", line 535, in _insert
+    check_keys, manipulate, write_concern, op_id, bypass_doc_val)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/collection.py", line 516, in _insert_one
+    check_keys=check_keys)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/pool.py", line 244, in command
+    self._raise_connection_failure(error)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/pymongo/pool.py", line 372, in _raise_connection_failure
+    raise error
+InvalidStringData: strings in documents must be valid UTF-8: '1-\xcb\xb0\xce\xf1\xb5\xc7\xbc\xc7\xd6\xa4.jpg'
+[2016-11-30 17:15:07 +0000] [702] [INFO] Starting gunicorn 19.6.0
+[2016-11-30 17:15:07 +0000] [702] [INFO] Listening at: http://0.0.0.0:8080 (702)
+[2016-11-30 17:15:07 +0000] [702] [INFO] Using worker: sync
+[2016-11-30 17:15:07 +0000] [709] [INFO] Booting worker with pid: 709
+[2016-11-30 17:15:07 +0000] [713] [INFO] Booting worker with pid: 713
+[2016-11-30 17:15:07 +0000] [722] [INFO] Booting worker with pid: 722
+[2016-11-30 17:15:07 +0000] [727] [INFO] Booting worker with pid: 727
+[2016-11-30 17:27:07,403] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 109, in upload
+    name1 = unicode(name,'GBK').encode('utf-8')
+TypeError: decoding Unicode is not supported
+[2016-12-01 10:19:13 +0000] [12528] [INFO] Starting gunicorn 19.6.0
+[2016-12-01 10:19:13 +0000] [12528] [INFO] Listening at: http://0.0.0.0:8080 (12528)
+[2016-12-01 10:19:13 +0000] [12528] [INFO] Using worker: sync
+[2016-12-01 10:19:13 +0000] [12533] [INFO] Booting worker with pid: 12533
+[2016-12-01 10:19:13 +0000] [12542] [INFO] Booting worker with pid: 12542
+[2016-12-01 10:19:13 +0000] [12543] [INFO] Booting worker with pid: 12543
+[2016-12-01 10:19:13 +0000] [12548] [INFO] Booting worker with pid: 12548
+[2016-12-01 10:31:54,810] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 117, in upload
+    name1 = unicode(name, 'GBK').encode('utf-8')
+UnicodeDecodeError: 'gbk' codec can't decode bytes in position 10-11: illegal multibyte sequence
+[2016-12-01 10:38:40 +0000] [14166] [INFO] Starting gunicorn 19.6.0
+[2016-12-01 10:38:40 +0000] [14166] [INFO] Listening at: http://0.0.0.0:8080 (14166)
+[2016-12-01 10:38:40 +0000] [14166] [INFO] Using worker: sync
+[2016-12-01 10:38:40 +0000] [14171] [INFO] Booting worker with pid: 14171
+[2016-12-01 10:38:40 +0000] [14180] [INFO] Booting worker with pid: 14180
+[2016-12-01 10:38:40 +0000] [14181] [INFO] Booting worker with pid: 14181
+[2016-12-01 10:38:40 +0000] [14198] [INFO] Booting worker with pid: 14198
+[2016-12-01 10:38:44 +0000] [14209] [INFO] Starting gunicorn 19.6.0
+[2016-12-01 10:38:44 +0000] [14209] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-12-01 10:38:44 +0000] [14209] [ERROR] Retrying in 1 second.
+[2016-12-01 10:38:45 +0000] [14209] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-12-01 10:38:45 +0000] [14209] [ERROR] Retrying in 1 second.
+[2016-12-01 10:38:46 +0000] [14209] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-12-01 10:38:46 +0000] [14209] [ERROR] Retrying in 1 second.
+[2016-12-01 10:38:47 +0000] [14209] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-12-01 10:38:47 +0000] [14209] [ERROR] Retrying in 1 second.
+[2016-12-01 10:38:48 +0000] [14209] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-12-01 10:38:48 +0000] [14209] [ERROR] Retrying in 1 second.
+[2016-12-01 10:38:49 +0000] [14209] [ERROR] Can't connect to ('0.0.0.0', 8080)
+[2016-12-01 10:39:43 +0000] [14325] [INFO] Starting gunicorn 19.6.0
+[2016-12-01 10:39:43 +0000] [14325] [INFO] Listening at: http://0.0.0.0:8080 (14325)
+[2016-12-01 10:39:43 +0000] [14325] [INFO] Using worker: sync
+[2016-12-01 10:39:43 +0000] [14330] [INFO] Booting worker with pid: 14330
+[2016-12-01 10:39:44 +0000] [14331] [INFO] Booting worker with pid: 14331
+[2016-12-01 10:39:44 +0000] [14334] [INFO] Booting worker with pid: 14334
+[2016-12-01 10:39:44 +0000] [14350] [INFO] Booting worker with pid: 14350
+[2016-12-01 10:39:46 +0000] [14372] [INFO] Starting gunicorn 19.6.0
+[2016-12-01 10:39:46 +0000] [14372] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-12-01 10:39:46 +0000] [14372] [ERROR] Retrying in 1 second.
+[2016-12-01 10:39:47 +0000] [14372] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-12-01 10:39:47 +0000] [14372] [ERROR] Retrying in 1 second.
+[2016-12-01 10:39:48 +0000] [14372] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-12-01 10:39:48 +0000] [14372] [ERROR] Retrying in 1 second.
+[2016-12-01 10:39:49 +0000] [14372] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-12-01 10:39:49 +0000] [14372] [ERROR] Retrying in 1 second.
+[2016-12-01 10:39:50 +0000] [14372] [INFO] Listening at: http://0.0.0.0:8080 (14372)
+[2016-12-01 10:39:50 +0000] [14372] [INFO] Using worker: sync
+[2016-12-01 10:39:50 +0000] [14378] [INFO] Booting worker with pid: 14378
+[2016-12-01 10:39:50 +0000] [14379] [INFO] Booting worker with pid: 14379
+[2016-12-01 10:39:50 +0000] [14396] [INFO] Booting worker with pid: 14396
+[2016-12-01 10:39:50 +0000] [14405] [INFO] Booting worker with pid: 14405
+[2016-12-01 10:46:31,573] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 117, in upload
+    name1 = unicode(name, 'GBK').encode('utf-8')
+UnicodeDecodeError: 'gbk' codec can't decode bytes in position 12-13: illegal multibyte sequence
+[2016-12-01 10:47:33,941] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 117, in upload
+    name1 = unicode(name, 'GBK').encode('utf-8')
+UnicodeDecodeError: 'gbk' codec can't decode bytes in position 12-13: illegal multibyte sequence
+[2016-12-01 10:48:34,247] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/zxjd/Web/web.py", line 117, in upload
+    name1 = unicode(name, 'GBK').encode('utf-8')
+UnicodeDecodeError: 'gbk' codec can't decode bytes in position 12-13: illegal multibyte sequence
+[2016-12-01 11:55:52 +0000] [19889] [INFO] Starting gunicorn 19.6.0
+[2016-12-01 11:55:52 +0000] [19889] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-12-01 11:55:52 +0000] [19889] [ERROR] Retrying in 1 second.
+[2016-12-01 11:55:53 +0000] [19889] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-12-01 11:55:53 +0000] [19889] [ERROR] Retrying in 1 second.
+[2016-12-01 11:55:54 +0000] [19889] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-12-01 11:55:54 +0000] [19889] [ERROR] Retrying in 1 second.
+[2016-12-01 11:55:55 +0000] [19889] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-12-01 11:55:55 +0000] [19889] [ERROR] Retrying in 1 second.
+[2016-12-01 11:55:56 +0000] [19889] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-12-01 11:55:56 +0000] [19889] [ERROR] Retrying in 1 second.
+[2016-12-01 11:55:57 +0000] [19889] [ERROR] Can't connect to ('0.0.0.0', 8080)
+[2016-12-01 11:56:21 +0000] [19949] [INFO] Starting gunicorn 19.6.0
+[2016-12-01 11:56:21 +0000] [19949] [INFO] Listening at: http://0.0.0.0:8080 (19949)
+[2016-12-01 11:56:21 +0000] [19949] [INFO] Using worker: sync
+[2016-12-01 11:56:21 +0000] [19954] [INFO] Booting worker with pid: 19954
+[2016-12-01 11:56:21 +0000] [19963] [INFO] Booting worker with pid: 19963
+[2016-12-01 11:56:21 +0000] [19972] [INFO] Booting worker with pid: 19972
+[2016-12-01 11:56:21 +0000] [19975] [INFO] Booting worker with pid: 19975
+[2016-12-01 19:40:53 +0000] [19596] [INFO] Booting worker with pid: 19596

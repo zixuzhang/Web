@@ -31,6 +31,7 @@ db = client.zxjd_database
 fs = gridfs.GridFS(db)
 
 rootdir = '/home/zxjd/zxjd_Project'
+# rootdir = '/home/zxjd/abc'
 
 for root, dirs, files in os.walk(rootdir):
 	for name in files:

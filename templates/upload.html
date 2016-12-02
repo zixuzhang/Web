@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}智信九鼎{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+	<h1>上传项目</h1>
+	<p>请选择项目压缩包(.zip文件):</p>
+	<!-- 上传文件夹 -->
+	<!-- <form method="POST" enctype="multipart/form-data">
+	<input type="file" name="file" webkitdirectory>
+	<input type="submit" name="upload" value="上传">
+	</form> -->
+</div>
+    <div class="col-md-4">
+    <form method="POST" enctype="multipart/form-data">
+	<input type="file" name="file" >
+	<input type="submit" name="upload" value="上传">
+	</form>
+    </div>
+
+{% endblock %}
