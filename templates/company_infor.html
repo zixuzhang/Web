@@ -4,8 +4,15 @@
 
 {% block page_content %}
 <div class="page-header">
-	<h3>{{ company_name }}:公司信息</h3>
-
+{#	<h3>{{ company_name }}:公司信息</h3>#}
+    <h1>{{ company_name }}</h1>
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="/company/{{ company_name }}/query_web">查询数据-网页</a></li>
+        <li><a href="/company/{{ company_name }}/query_patent">查询数据-专利</a></li>
+        <li><a href="/company/{{ company_name }}/todo">待处理</a></li>
+        <li><a href="/company/{{ company_name }}/company_infor">企业基本信息</a></li>
+        <li><a href="/company/{{ company_name }}/company_project">企业项目资料</a></li>
+    </ul>
 	{{ count }}
 	<ul>
 	{% for file in files %}

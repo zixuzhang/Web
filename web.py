@@ -17,9 +17,9 @@ db = client.zxjd_database
 fs = gridfs.GridFS(db)
 
 
-class Project(Document):
-	filename = StringField()
-	file = FileField()
+# class Project(Document):
+# 	filename = StringField()
+# 	file = FileField()
 
 @app.errorhandler(404)
 def page_not_found(e):
@@ -34,12 +34,6 @@ def index():
 	files = fs.find()
 	count = files.count()
 	return render_template('index.html', count=count, files=files)
-
-#公司列表
-@app.route('/company')
-def company():
-	company = fs.find().distinct('company_name')
-	return render_template('company.html',company=company)
 
 @app.route('/project')
 def project():
@@ -77,7 +71,6 @@ def upload():
 				zf = zipfile.ZipFile(file, 'r')
 				for name in zf.namelist():
 					if isinstance(name, str):
-						charset = chardet.detect(name)['encoding']
 						if chardet.detect(name)['encoding'] == 'GB2312':
 							name1 = unicode(name, 'GBK').encode('utf-8')
 						else:
@@ -94,11 +87,18 @@ def upload():
 				return redirect(url_for('index'))
 	return render_template('upload.html')
 
+#公司列表
+@app.route('/company')
+def company():
+	company = fs.find().distinct('company_name')
+	return render_template('company.html',company=company)
+
 #客户（公司）主页
 @app.route('/company/<company_name>')
-def company_name(company_name):
-
-	return render_template('company_name.html', company_name=company_name)
+def company_name(company_name, ):
+	files = fs.find({'company_name': company_name, 'tag1': '查询数据-网页'})
+	count = files.count()
+	return render_template('company_name.html', company_name=company_name, files=files, count=count)
 
 #查询数据网页
 @app.route('/company/<company_name>/query_web')
@@ -106,6 +106,7 @@ def query_web(company_name):
 	files = fs.find({'company_name':company_name, 'tag1':'查询数据-网页'})
 	count = files.count()
 	return render_template('query_web.html', company_name=company_name, files=files, count=count)
+	# return redirect(url_for('company_name', company_name=company_name, category='query_web'))
 
 #查询数据专利
 @app.route('/company/<company_name>/query_patent')
@@ -113,6 +114,7 @@ def query_patent(company_name):
 	files = fs.find({'company_name':company_name, 'tag1':'查询数据-专利'})
 	count = files.count()
 	return render_template('query_patent.html', company_name=company_name, files=files, count=count)
+	# return redirect(url_for('company_name', company_name=company_name, category=query_patent))
 
 #待处理文件
 @app.route('/company/<company_name>/todo')

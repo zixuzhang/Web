@@ -2025,3 +2025,1239 @@ UnicodeDecodeError: 'gbk' codec can't decode bytes in position 12-13: illegal mu
 [2016-12-01 11:56:21 +0000] [19972] [INFO] Booting worker with pid: 19972
 [2016-12-01 11:56:21 +0000] [19975] [INFO] Booting worker with pid: 19975
 [2016-12-01 19:40:53 +0000] [19596] [INFO] Booting worker with pid: 19596
+[2016-12-05 09:46:51 +0000] [23328] [INFO] Starting gunicorn 19.6.0
+[2016-12-05 09:46:51 +0000] [23328] [INFO] Listening at: http://0.0.0.0:8080 (23328)
+[2016-12-05 09:46:51 +0000] [23328] [INFO] Using worker: sync
+[2016-12-05 09:46:51 +0000] [23333] [INFO] Booting worker with pid: 23333
+[2016-12-05 09:46:51 +0000] [23336] [INFO] Booting worker with pid: 23336
+[2016-12-05 09:46:51 +0000] [23333] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:46:51 +0000] [23333] [INFO] Worker exiting (pid: 23333)
+[2016-12-05 09:46:51 +0000] [23339] [INFO] Booting worker with pid: 23339
+[2016-12-05 09:46:51 +0000] [23342] [INFO] Booting worker with pid: 23342
+[2016-12-05 09:46:51 +0000] [23336] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:46:51 +0000] [23336] [INFO] Worker exiting (pid: 23336)
+[2016-12-05 09:46:51 +0000] [23339] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:46:51 +0000] [23339] [INFO] Worker exiting (pid: 23339)
+[2016-12-05 09:46:51 +0000] [23342] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:46:51 +0000] [23342] [INFO] Worker exiting (pid: 23342)
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 192, in run
+    super(Application, self).run()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 72, in run
+    Arbiter(self).run()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 218, in run
+    self.halt(reason=inst.reason, exit_status=inst.exit_status)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 331, in halt
+    self.stop()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 381, in stop
+    time.sleep(0.1)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 231, in handle_chld
+    self.reap_workers()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 506, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+[2016-12-05 09:47:38 +0000] [23423] [INFO] Starting gunicorn 19.6.0
+[2016-12-05 09:47:38 +0000] [23423] [INFO] Listening at: http://0.0.0.0:8080 (23423)
+[2016-12-05 09:47:38 +0000] [23423] [INFO] Using worker: sync
+[2016-12-05 09:47:38 +0000] [23428] [INFO] Booting worker with pid: 23428
+[2016-12-05 09:47:38 +0000] [23428] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:47:38 +0000] [23428] [INFO] Worker exiting (pid: 23428)
+[2016-12-05 09:47:38 +0000] [23433] [INFO] Booting worker with pid: 23433
+[2016-12-05 09:47:38 +0000] [23433] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:47:38 +0000] [23433] [INFO] Worker exiting (pid: 23433)
+[2016-12-05 09:47:38 +0000] [23438] [INFO] Booting worker with pid: 23438
+[2016-12-05 09:47:38 +0000] [23441] [INFO] Booting worker with pid: 23441
+[2016-12-05 09:47:38 +0000] [23438] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:47:38 +0000] [23438] [INFO] Worker exiting (pid: 23438)
+[2016-12-05 09:47:38 +0000] [23441] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:47:38 +0000] [23441] [INFO] Worker exiting (pid: 23441)
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 192, in run
+    super(Application, self).run()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 72, in run
+    Arbiter(self).run()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 218, in run
+    self.halt(reason=inst.reason, exit_status=inst.exit_status)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 331, in halt
+    self.stop()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 381, in stop
+    time.sleep(0.1)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 231, in handle_chld
+    self.reap_workers()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 506, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+[2016-12-05 09:47:39 +0000] [23450] [INFO] Starting gunicorn 19.6.0
+[2016-12-05 09:47:39 +0000] [23450] [INFO] Listening at: http://0.0.0.0:8080 (23450)
+[2016-12-05 09:47:39 +0000] [23450] [INFO] Using worker: sync
+[2016-12-05 09:47:39 +0000] [23455] [INFO] Booting worker with pid: 23455
+[2016-12-05 09:47:39 +0000] [23456] [INFO] Booting worker with pid: 23456
+[2016-12-05 09:47:39 +0000] [23455] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:47:39 +0000] [23455] [INFO] Worker exiting (pid: 23455)
+[2016-12-05 09:47:39 +0000] [23456] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:47:39 +0000] [23456] [INFO] Worker exiting (pid: 23456)
+[2016-12-05 09:47:39 +0000] [23465] [INFO] Booting worker with pid: 23465
+[2016-12-05 09:47:39 +0000] [23468] [INFO] Booting worker with pid: 23468
+[2016-12-05 09:47:39 +0000] [23465] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:47:39 +0000] [23465] [INFO] Worker exiting (pid: 23465)
+[2016-12-05 09:47:39 +0000] [23468] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:47:39 +0000] [23468] [INFO] Worker exiting (pid: 23468)
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 192, in run
+    super(Application, self).run()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 72, in run
+    Arbiter(self).run()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 218, in run
+    self.halt(reason=inst.reason, exit_status=inst.exit_status)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 331, in halt
+    self.stop()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 381, in stop
+    time.sleep(0.1)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 231, in handle_chld
+    self.reap_workers()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 506, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+[2016-12-05 09:47:41 +0000] [23481] [INFO] Starting gunicorn 19.6.0
+[2016-12-05 09:47:41 +0000] [23481] [INFO] Listening at: http://0.0.0.0:8080 (23481)
+[2016-12-05 09:47:41 +0000] [23481] [INFO] Using worker: sync
+[2016-12-05 09:47:41 +0000] [23486] [INFO] Booting worker with pid: 23486
+[2016-12-05 09:47:41 +0000] [23486] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:47:41 +0000] [23486] [INFO] Worker exiting (pid: 23486)
+[2016-12-05 09:47:41 +0000] [23491] [INFO] Booting worker with pid: 23491
+[2016-12-05 09:47:41 +0000] [23494] [INFO] Booting worker with pid: 23494
+[2016-12-05 09:47:41 +0000] [23495] [INFO] Booting worker with pid: 23495
+[2016-12-05 09:47:41 +0000] [23491] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:47:41 +0000] [23491] [INFO] Worker exiting (pid: 23491)
+[2016-12-05 09:47:41 +0000] [23494] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:47:41 +0000] [23494] [INFO] Worker exiting (pid: 23494)
+[2016-12-05 09:47:41 +0000] [23495] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:47:41 +0000] [23495] [INFO] Worker exiting (pid: 23495)
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 192, in run
+    super(Application, self).run()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 72, in run
+    Arbiter(self).run()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 218, in run
+    self.halt(reason=inst.reason, exit_status=inst.exit_status)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 331, in halt
+    self.stop()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 381, in stop
+    time.sleep(0.1)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 231, in handle_chld
+    self.reap_workers()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 506, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+[2016-12-05 09:49:21 +0000] [23931] [INFO] Starting gunicorn 19.6.0
+[2016-12-05 09:49:21 +0000] [23931] [INFO] Listening at: http://0.0.0.0:8080 (23931)
+[2016-12-05 09:49:21 +0000] [23931] [INFO] Using worker: sync
+[2016-12-05 09:49:21 +0000] [23936] [INFO] Booting worker with pid: 23936
+[2016-12-05 09:49:21 +0000] [23937] [INFO] Booting worker with pid: 23937
+[2016-12-05 09:49:21 +0000] [23936] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:49:21 +0000] [23936] [INFO] Worker exiting (pid: 23936)
+[2016-12-05 09:49:21 +0000] [23937] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:49:21 +0000] [23937] [INFO] Worker exiting (pid: 23937)
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 192, in run
+    super(Application, self).run()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 72, in run
+    Arbiter(self).run()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 218, in run
+    self.halt(reason=inst.reason, exit_status=inst.exit_status)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 331, in halt
+    self.stop()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 381, in stop
+    time.sleep(0.1)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 231, in handle_chld
+    self.reap_workers()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 506, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+[2016-12-05 09:49:23 +0000] [23953] [INFO] Starting gunicorn 19.6.0
+[2016-12-05 09:49:23 +0000] [23953] [INFO] Listening at: http://0.0.0.0:8080 (23953)
+[2016-12-05 09:49:23 +0000] [23953] [INFO] Using worker: sync
+[2016-12-05 09:49:23 +0000] [23958] [INFO] Booting worker with pid: 23958
+[2016-12-05 09:49:23 +0000] [23961] [INFO] Booting worker with pid: 23961
+[2016-12-05 09:49:23 +0000] [23958] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:49:23 +0000] [23958] [INFO] Worker exiting (pid: 23958)
+[2016-12-05 09:49:23 +0000] [23961] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:49:23 +0000] [23961] [INFO] Worker exiting (pid: 23961)
+[2016-12-05 09:49:23 +0000] [23970] [INFO] Booting worker with pid: 23970
+[2016-12-05 09:49:23 +0000] [23973] [INFO] Booting worker with pid: 23973
+[2016-12-05 09:49:23 +0000] [23970] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:49:23 +0000] [23970] [INFO] Worker exiting (pid: 23970)
+[2016-12-05 09:49:23 +0000] [23973] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:49:23 +0000] [23973] [INFO] Worker exiting (pid: 23973)
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 192, in run
+    super(Application, self).run()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 72, in run
+    Arbiter(self).run()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 218, in run
+    self.halt(reason=inst.reason, exit_status=inst.exit_status)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 331, in halt
+    self.stop()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 381, in stop
+    time.sleep(0.1)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 231, in handle_chld
+    self.reap_workers()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 506, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+[2016-12-05 09:49:24 +0000] [23984] [INFO] Starting gunicorn 19.6.0
+[2016-12-05 09:49:24 +0000] [23984] [INFO] Listening at: http://0.0.0.0:8080 (23984)
+[2016-12-05 09:49:24 +0000] [23984] [INFO] Using worker: sync
+[2016-12-05 09:49:24 +0000] [23989] [INFO] Booting worker with pid: 23989
+[2016-12-05 09:49:24 +0000] [23989] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:49:24 +0000] [23989] [INFO] Worker exiting (pid: 23989)
+[2016-12-05 09:49:24 +0000] [23984] [INFO] Shutting down: Master
+[2016-12-05 09:49:24 +0000] [23984] [INFO] Reason: Worker failed to boot.
+[2016-12-05 09:50:47 +0000] [24134] [INFO] Starting gunicorn 19.6.0
+[2016-12-05 09:50:47 +0000] [24134] [INFO] Listening at: http://0.0.0.0:8080 (24134)
+[2016-12-05 09:50:47 +0000] [24134] [INFO] Using worker: sync
+[2016-12-05 09:50:47 +0000] [24139] [INFO] Booting worker with pid: 24139
+[2016-12-05 09:50:47 +0000] [24140] [INFO] Booting worker with pid: 24140
+[2016-12-05 09:50:47 +0000] [24145] [INFO] Booting worker with pid: 24145
+[2016-12-05 09:50:47 +0000] [24139] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:50:47 +0000] [24139] [INFO] Worker exiting (pid: 24139)
+[2016-12-05 09:50:47 +0000] [24140] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:50:47 +0000] [24140] [INFO] Worker exiting (pid: 24140)
+[2016-12-05 09:50:47 +0000] [24145] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:50:47 +0000] [24145] [INFO] Worker exiting (pid: 24145)
+[2016-12-05 09:50:47 +0000] [24157] [INFO] Booting worker with pid: 24157
+[2016-12-05 09:50:47 +0000] [24157] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:50:47 +0000] [24157] [INFO] Worker exiting (pid: 24157)
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 192, in run
+    super(Application, self).run()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 72, in run
+    Arbiter(self).run()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 218, in run
+    self.halt(reason=inst.reason, exit_status=inst.exit_status)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 331, in halt
+    self.stop()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 381, in stop
+    time.sleep(0.1)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 231, in handle_chld
+    self.reap_workers()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 506, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+[2016-12-05 09:50:49 +0000] [24165] [INFO] Starting gunicorn 19.6.0
+[2016-12-05 09:50:49 +0000] [24165] [INFO] Listening at: http://0.0.0.0:8080 (24165)
+[2016-12-05 09:50:49 +0000] [24165] [INFO] Using worker: sync
+[2016-12-05 09:50:49 +0000] [24170] [INFO] Booting worker with pid: 24170
+[2016-12-05 09:50:49 +0000] [24170] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:50:49 +0000] [24170] [INFO] Worker exiting (pid: 24170)
+[2016-12-05 09:50:49 +0000] [24176] [INFO] Booting worker with pid: 24176
+[2016-12-05 09:50:49 +0000] [24179] [INFO] Booting worker with pid: 24179
+[2016-12-05 09:50:49 +0000] [24180] [INFO] Booting worker with pid: 24180
+[2016-12-05 09:50:49 +0000] [24176] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:50:49 +0000] [24176] [INFO] Worker exiting (pid: 24176)
+[2016-12-05 09:50:49 +0000] [24179] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:50:49 +0000] [24179] [INFO] Worker exiting (pid: 24179)
+[2016-12-05 09:50:49 +0000] [24180] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:50:49 +0000] [24180] [INFO] Worker exiting (pid: 24180)
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 192, in run
+    super(Application, self).run()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 72, in run
+    Arbiter(self).run()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 218, in run
+    self.halt(reason=inst.reason, exit_status=inst.exit_status)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 331, in halt
+    self.stop()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 381, in stop
+    time.sleep(0.1)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 231, in handle_chld
+    self.reap_workers()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 506, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+[2016-12-05 09:50:50 +0000] [24196] [INFO] Starting gunicorn 19.6.0
+[2016-12-05 09:50:50 +0000] [24196] [INFO] Listening at: http://0.0.0.0:8080 (24196)
+[2016-12-05 09:50:50 +0000] [24196] [INFO] Using worker: sync
+[2016-12-05 09:50:50 +0000] [24201] [INFO] Booting worker with pid: 24201
+[2016-12-05 09:50:50 +0000] [24201] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:50:50 +0000] [24201] [INFO] Worker exiting (pid: 24201)
+[2016-12-05 09:50:50 +0000] [24207] [INFO] Booting worker with pid: 24207
+[2016-12-05 09:50:50 +0000] [24208] [INFO] Booting worker with pid: 24208
+[2016-12-05 09:50:51 +0000] [24207] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:50:51 +0000] [24207] [INFO] Worker exiting (pid: 24207)
+[2016-12-05 09:50:51 +0000] [24208] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:50:51 +0000] [24208] [INFO] Worker exiting (pid: 24208)
+[2016-12-05 09:50:51 +0000] [24219] [INFO] Booting worker with pid: 24219
+[2016-12-05 09:50:51 +0000] [24219] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:50:51 +0000] [24219] [INFO] Worker exiting (pid: 24219)
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 192, in run
+    super(Application, self).run()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 72, in run
+    Arbiter(self).run()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 218, in run
+    self.halt(reason=inst.reason, exit_status=inst.exit_status)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 331, in halt
+    self.stop()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 381, in stop
+    time.sleep(0.1)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 231, in handle_chld
+    self.reap_workers()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 506, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+[2016-12-05 09:50:51 +0000] [24227] [INFO] Starting gunicorn 19.6.0
+[2016-12-05 09:50:51 +0000] [24227] [INFO] Listening at: http://0.0.0.0:8080 (24227)
+[2016-12-05 09:50:51 +0000] [24227] [INFO] Using worker: sync
+[2016-12-05 09:50:51 +0000] [24232] [INFO] Booting worker with pid: 24232
+[2016-12-05 09:50:51 +0000] [24235] [INFO] Booting worker with pid: 24235
+[2016-12-05 09:50:51 +0000] [24236] [INFO] Booting worker with pid: 24236
+[2016-12-05 09:50:51 +0000] [24232] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:50:51 +0000] [24232] [INFO] Worker exiting (pid: 24232)
+[2016-12-05 09:50:51 +0000] [24244] [INFO] Booting worker with pid: 24244
+[2016-12-05 09:50:51 +0000] [24236] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:50:51 +0000] [24235] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:50:51 +0000] [24236] [INFO] Worker exiting (pid: 24236)
+[2016-12-05 09:50:51 +0000] [24235] [INFO] Worker exiting (pid: 24235)
+[2016-12-05 09:50:51 +0000] [24244] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:50:51 +0000] [24244] [INFO] Worker exiting (pid: 24244)
+[2016-12-05 09:50:54 +0000] [24267] [INFO] Starting gunicorn 19.6.0
+[2016-12-05 09:50:54 +0000] [24267] [INFO] Listening at: http://0.0.0.0:8080 (24267)
+[2016-12-05 09:50:54 +0000] [24267] [INFO] Using worker: sync
+[2016-12-05 09:50:54 +0000] [24272] [INFO] Booting worker with pid: 24272
+[2016-12-05 09:50:54 +0000] [24272] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:50:54 +0000] [24272] [INFO] Worker exiting (pid: 24272)
+[2016-12-05 09:50:54 +0000] [24278] [INFO] Booting worker with pid: 24278
+[2016-12-05 09:50:54 +0000] [24279] [INFO] Booting worker with pid: 24279
+[2016-12-05 09:50:54 +0000] [24280] [INFO] Booting worker with pid: 24280
+[2016-12-05 09:50:54 +0000] [24278] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:50:54 +0000] [24278] [INFO] Worker exiting (pid: 24278)
+[2016-12-05 09:50:54 +0000] [24279] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:50:54 +0000] [24279] [INFO] Worker exiting (pid: 24279)
+[2016-12-05 09:50:54 +0000] [24280] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:50:54 +0000] [24280] [INFO] Worker exiting (pid: 24280)
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 192, in run
+    super(Application, self).run()
+
+Exception gunicorn.errors.HaltServer: HaltServer() in <module 'threading' from '/usr/lib/python2.7/threading.pyc'> ignored
+[2016-12-05 09:51:55 +0000] [24356] [INFO] Starting gunicorn 19.6.0
+[2016-12-05 09:51:55 +0000] [24356] [INFO] Listening at: http://0.0.0.0:8080 (24356)
+[2016-12-05 09:51:55 +0000] [24356] [INFO] Using worker: sync
+[2016-12-05 09:51:55 +0000] [24361] [INFO] Booting worker with pid: 24361
+[2016-12-05 09:51:55 +0000] [24362] [INFO] Booting worker with pid: 24362
+[2016-12-05 09:51:55 +0000] [24361] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:51:55 +0000] [24361] [INFO] Worker exiting (pid: 24361)
+[2016-12-05 09:51:55 +0000] [24362] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/zxjd/Web/web.py", line 20, in <module>
+    class Project(Document):
+NameError: name 'Document' is not defined
+[2016-12-05 09:51:55 +0000] [24362] [INFO] Worker exiting (pid: 24362)
+Traceback (most recent call last):
+  File "/home/zxjd/Web/venv/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 192, in run
+    super(Application, self).run()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 72, in run
+    Arbiter(self).run()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 218, in run
+    self.halt(reason=inst.reason, exit_status=inst.exit_status)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 331, in halt
+    self.stop()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 381, in stop
+    time.sleep(0.1)
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 231, in handle_chld
+    self.reap_workers()
+  File "/home/zxjd/Web/venv/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 506, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+[2016-12-05 09:53:34 +0000] [24555] [INFO] Starting gunicorn 19.6.0
+[2016-12-05 09:53:34 +0000] [24555] [INFO] Listening at: http://0.0.0.0:8080 (24555)
+[2016-12-05 09:53:34 +0000] [24555] [INFO] Using worker: sync
+[2016-12-05 09:53:34 +0000] [24560] [INFO] Booting worker with pid: 24560
+[2016-12-05 09:53:35 +0000] [24566] [INFO] Booting worker with pid: 24566
+[2016-12-05 09:53:35 +0000] [24572] [INFO] Booting worker with pid: 24572
+[2016-12-05 09:53:35 +0000] [24575] [INFO] Booting worker with pid: 24575
+[2016-12-05 09:53:39 +0000] [24586] [INFO] Starting gunicorn 19.6.0
+[2016-12-05 09:53:39 +0000] [24586] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-12-05 09:53:39 +0000] [24586] [ERROR] Retrying in 1 second.
+[2016-12-05 09:53:40 +0000] [24586] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-12-05 09:53:40 +0000] [24586] [ERROR] Retrying in 1 second.
+[2016-12-05 09:53:41 +0000] [24586] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-12-05 09:53:41 +0000] [24586] [ERROR] Retrying in 1 second.
+[2016-12-05 09:53:42 +0000] [24586] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-12-05 09:53:42 +0000] [24586] [ERROR] Retrying in 1 second.
+[2016-12-05 09:53:43 +0000] [24586] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-12-05 09:53:43 +0000] [24586] [ERROR] Retrying in 1 second.
+[2016-12-05 09:53:44 +0000] [24586] [ERROR] Can't connect to ('0.0.0.0', 8080)
+[2016-12-05 09:55:29 +0000] [24686] [INFO] Starting gunicorn 19.6.0
+[2016-12-05 09:55:29 +0000] [24686] [INFO] Listening at: http://0.0.0.0:8080 (24686)
+[2016-12-05 09:55:29 +0000] [24686] [INFO] Using worker: sync
+[2016-12-05 09:55:29 +0000] [24691] [INFO] Booting worker with pid: 24691
+[2016-12-05 09:55:29 +0000] [24697] [INFO] Booting worker with pid: 24697
+[2016-12-05 09:55:29 +0000] [24700] [INFO] Booting worker with pid: 24700
+[2016-12-05 09:55:29 +0000] [24709] [INFO] Booting worker with pid: 24709
+[2016-12-05 09:55:33 +0000] [24719] [INFO] Starting gunicorn 19.6.0
+[2016-12-05 09:55:33 +0000] [24719] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-12-05 09:55:33 +0000] [24719] [ERROR] Retrying in 1 second.
+[2016-12-05 09:55:34 +0000] [24719] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-12-05 09:55:34 +0000] [24719] [ERROR] Retrying in 1 second.
+[2016-12-05 09:55:35 +0000] [24719] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-12-05 09:55:35 +0000] [24719] [ERROR] Retrying in 1 second.
+[2016-12-05 09:55:36 +0000] [24719] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2016-12-05 09:55:36 +0000] [24719] [ERROR] Retrying in 1 second.
+[2016-12-05 09:55:37 +0000] [24719] [INFO] Listening at: http://0.0.0.0:8080 (24719)
+[2016-12-05 09:55:37 +0000] [24719] [INFO] Using worker: sync
+[2016-12-05 09:55:37 +0000] [24729] [INFO] Booting worker with pid: 24729
+[2016-12-05 09:55:37 +0000] [24732] [INFO] Booting worker with pid: 24732
+[2016-12-05 09:55:37 +0000] [24733] [INFO] Booting worker with pid: 24733
+[2016-12-05 09:55:37 +0000] [24747] [INFO] Booting worker with pid: 24747
