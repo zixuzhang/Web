@@ -1,0 +1,124 @@
+{#{% extends "base.html" %}#}
+{##}
+{#{% block title %}智信九鼎{% endblock %}#}
+{#{% block head %}#}
+{#{{ super() }}#}
+{#{% endblock %}#}
+{#{% block page_content %}#}
+{#<div class="page-header">#}
+{#	<h1>所有文件</h1>#}
+{#</div>#}
+{#    <div>#}
+{#        <p>总文件数：{{ count }}</p>#}
+{#    </div>#}
+{#<h2>模态框（Modal）插件事件</h2>#}
+{#<!-- 按钮触发模态框 -->#}
+{#<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">#}
+{#	开始演示模态框#}
+{#</button>#}
+{#<!-- 模态框（Modal） -->#}
+{#<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">#}
+{#	<div class="modal-dialog">#}
+{#		<div class="modal-content">#}
+{#			<div class="modal-header">#}
+{#				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×#}
+{#				</button>#}
+{#				<h4 class="modal-title" id="myModalLabel">#}
+{#					模态框（Modal）标题#}
+{#				</h4>#}
+{#			</div>#}
+{#			<div class="modal-body">#}
+{#				点击关闭按钮检查事件功能。#}
+{#			</div>#}
+{#			<div class="modal-footer">#}
+{#				<button type="button" class="btn btn-default" data-dismiss="modal">#}
+{#					关闭#}
+{#				</button>#}
+{#				<button id="delete" type="button" class="btn btn-primary" data-dismiss="modal">#}
+{#					提交更改#}
+{#				</button>#}
+{#			</div>#}
+{#		</div><!-- /.modal-content -->#}
+{#	</div><!-- /.modal-dialog -->#}
+{#</div><!-- /.modal -->#}
+{##}
+{#<script>#}
+{#   $('#delete').click(function () {#}
+{#       alert('aa');#}
+{#       $.get('/search',function (data, status) {#}
+{#           alert('数据：' + data + '\n状态：' + status);#}
+{#       });#}
+{##}
+{#   });#}
+{##}
+{#</script>#}
+{#{% endblock %}#}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>MD5 Test</title>
+</head>
+
+<body id="index" class="home">
+
+	<h1>MD5 Test</h1>
+
+	<input type="file" id="files" name="files[]" multiple />
+	<output id="list"></output>
+
+	<!--from http://pajhome.org.uk/crypt/md5/ -->
+	<script type="text/javascript" src="md5-min.js"></script>
+	<script>
+document.getElementById('file').addEventListener('change', function () {
+    var blobSlice = File.prototype.slice || File.prototype.mozSlice || File.prototype.webkitSlice,
+        file = this.files[0],
+        chunkSize = 2097152,                             // Read in chunks of 2MB
+        chunks = Math.ceil(file.size / chunkSize),
+        currentChunk = 0,
+        spark = new SparkMD5.ArrayBuffer(),
+        fileReader = new FileReader();
+
+    fileReader.onload = function (e) {
+        console.log('read chunk nr', currentChunk + 1, 'of', chunks);
+        spark.append(e.target.result);                   // Append array buffer
+        currentChunk++;
+
+        if (currentChunk < chunks) {
+            loadNext();
+        } else {
+            console.log('finished loading');
+            console.info('computed hash', spark.end());  // Compute hash
+        }
+    };
+
+    fileReader.onerror = function () {
+        console.warn('oops, something went wrong.');
+    };
+
+    function loadNext() {
+        var start = currentChunk * chunkSize,
+            end = ((start + chunkSize) >= file.size) ? file.size : start + chunkSize;
+
+        fileReader.readAsArrayBuffer(blobSlice.call(file, start, end));
+    }
+
+    loadNext();
+});
+
+	</script>
+
+</body>
+
+	# os.chdir('/home/zxjd/Web/cace')
+	# allowed_filetype = ['.pdf', '.doc', '.docx', '.xls', '.xlsx', '.ppt', '.pptx']
+	# for i in allowed_filetype:
+	# 	files = fs.find({'filename': re.compile(i), 'text': {'$exists': False}})
+	# 	if files.count() > 0 :
+	# 		for file in files:
+	# 			x_file = open('a'+i, 'wb')
+	# 			x_file.write(file.read())
+	# 			x_file.close()
+	# 			parsed = parser.from_file('a'+i)
+	# 			s = parsed['content']
+	# 			texts.insert_one({'id':file._id,'text':s})

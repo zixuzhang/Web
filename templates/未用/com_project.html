@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}智信九鼎{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+	<h1><a href="{{ url_for('company_name', company_name=company_name) }}">{{ company_name }}</a>-企业项目资料</h1>
+
+<ul class="nav nav-tabs">
+    {% for tag2 in tdict.keys() %}
+        <li>
+            <div class="btn-group">
+        {#        <button class="btn">{{ tag2 }}</button>#}
+                <a href="{{ url_for('query_com_pro_all',company_name=company_name,tag2=tag2) }}"
+                                            class="btn">{{ tag2 }}</a>
+                <button class="btn dropdown-toggle" data-toggle="dropdown">
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    {% for tag3 in tdict[tag2] %}
+                        <li><a href="{{ url_for('query_com_pro',company_name=company_name,tag2=tag2, tag3=tag3) }}">{{ tag3 }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </li>
+    {% endfor %}
+</ul>
+</div>
+
+<div>
+    {% if t %}
+        <p>{{ t }}文件数：{{ count }}</p>
+    {% else %}
+        <p>总企业项目资料数：{{ count }}</p>
+    {% endif %}
+	<ul>
+	{% for file in files %}
+        <li>
+		    <a href='{{ url_for('download',file_id = file._id ) }}'>{{ file.filename }}</a>
+	    </li>
+            <a href="/{{ file._id }}/delete" class="label label-danger" id="delete">删除</a>
+            <a href="/{{ file._id }}/update" class="label label-warning">重新上传</a>
+	{% endfor %}
+	</ul>
+</div>
+{% endblock %}

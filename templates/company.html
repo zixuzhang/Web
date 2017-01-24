@@ -7,11 +7,11 @@
 	<h1>所有公司</h1>
 
 </div>
-    <div>
+<div>
     {% for company_name in company %}
 	<li>
 		<a href='/company/{{ company_name }}'>{{ company_name }}</a>
 	</li>
 	{% endfor %}
-    </div>
+</div>
 {% endblock %}

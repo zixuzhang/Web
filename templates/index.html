@@ -1,22 +1,25 @@
 {% extends "base.html" %}
 
 {% block title %}智信九鼎{% endblock %}
-
+{% block head %}
+{{ super() }}
+{% endblock %}
 {% block page_content %}
 <div class="page-header">
 	<h1>所有文件</h1>
 </div>
-    <div>
 
-	<p>总文件数：{{ count }}</p>
-	<ul>
-	{% for file in files %}
-	<li>
-		<a href={{ file._id }}>{{ file.filename }}</a>
-		<!-- <li>{{file._id}}</li> -->
-	</li>
+<div>
+    <p>总文件数：{{ count }}</p>
+    <ul>
+        {% for file in files %}
+            <li>
+                <a href={{ file._id }}>{{ file.filename }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
 
-	{% endfor %}
-	</ul>
-    </div>
+{#{{ pagination.info }}#}
+{{ pagination.links }}
 {% endblock %}

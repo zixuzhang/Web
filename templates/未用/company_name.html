@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}智信九鼎{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+	<h1>{{ company_name }}</h1>
+{#    <ul class="nav nav-tabs">#}
+{#        <li class="active"><a href="/company/{{ company_name }}/query_web" >查询数据-网页</a></li>#}
+{#        <li><a href="/company/{{ company_name }}/query_patent" >查询数据-专利</a></li>#}
+{#        <li><a href="/company/{{ company_name }}/todo">待处理</a></li>#}
+{#        <li><a href="/company/{{ company_name }}/company_infor">企业基本信息</a></li>#}
+{#        <li><a href="/company/{{ company_name }}/company_project">企业项目资料</a></li>#}
+{#    </ul>#}
+    <ul class="nav nav-tabs">
+        {% for tag1 in tags %}
+            <li><a href="/company/{{ company_name }}/{{ tag1 }}" >{{ tag1 }}</a></li>
+        {% endfor %}
+    </ul>
+
+</div>
+<div>
+    <p>文件数：{{ count }}</p>
+	<ul>
+	{% for file in files %}
+	<li>
+		<a href='{{ url_for('download',file_id = file._id ) }}'>{{ file.filename }}</a>
+	</li>
+        <a href="/{{ file._id }}/delete" class="label label-danger">删除</a>
+        <a href="/{{ file._id }}/update" class="label label-warning">重新上传</a>
+	{% endfor %}
+	</ul>
+</div>
+{% endblock %}

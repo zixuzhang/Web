@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block title %}智信九鼎{% endblock %}
+{% block head %}
+    {{ super() }}
+    <script src="/static/jquery.mark.min.js"></script>
+    <style>
+    mark
+    {
+        background: orange;
+        color: black;
+    }
+    #text
+    {
+
+        height:300px;
+        overflow: scroll
+    }
+    #html
+    {
+        height: 300px;
+        overflow: scroll;
+    }
+    </style>
+{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+    <form method="POST" >
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="请输入关键字" name="search_name">
+            <span class="input-group-btn">
+                <button class="btn btn-info" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+            </span>
+        </div>
+    </form>
+</div>
+
+
+<div class="row">
+<p>总文件数：{{ count }}   关键字匹配个数：{{ match_count }}</p>
+{% for i in files_list %}
+    <ul class="list-group list-unstyled">
+        <li>
+            <span class="badge">{{ i[0] }}</span>
+            <a href='/{{ i[1]._id }}'>{{ i[1].filename }}</a>
+        </li>
+        {%  for x in i[2] %}
+            <li class="list-group-item">{{ x }}</li>
+        {% endfor %}
+        <li id="text" class="list-group-item">
+            {{ i[1].html }}
+        </li>
+    </ul>
+{% endfor %}
+</div>
+<script>
+    var keyword = '{{ search_name }}'
+    $('.list-group-item').mark(keyword)
+    $('#text').mark(keyword)
+</script>
+{% endblock %}

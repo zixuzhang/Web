@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}智信九鼎{% endblock %}
+{% block head %}
+{{ super() }}
+{% endblock %}
+{% block page_content %}
+<div class="page-header">
+    <form method="POST" >
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="请按文件名搜索" name="search_name">
+            <span class="input-group-btn">
+                <button class="btn btn-info" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+            </span>
+        </div>
+    </form>
+</div>
+    <div>
+        <p>总文件数：{{ count }}</p>
+        <ul>
+            {% for file in files %}
+                <li>
+                    <a href={{ file._id }}>{{ file.filename }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+
+
+{% endblock %}
