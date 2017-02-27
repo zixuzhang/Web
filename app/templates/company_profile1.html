@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% block title %}智信九鼎{% endblock %}
+{% block head %}
+{{ super() }}
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+    iframe
+    {
+        width: 450px;
+        height: 600px;
+        overflow: scroll;
+    }
+    </style>
+{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+	<h1>{{ company_name }}</h1>
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+      <p>项目目录</p>
+      <div id="container"></div>
+<script>
+$('#container').jstree({
+    'core' : {
+      'data' : {
+        "url" : "/get_json/{{ company_name }}",
+        "dataType" : "json"
+      }
+    }
+});
+$('#container').on("changed.jstree", function (e, data){
+    var currentNode = data.instance.get_selected(true)[0].text;
+{#    alert(currentNode)#}
+    var path = data.instance.get_path(data.node,"/");
+{#    alert(path);#}
+    var data = { "tag": path }
+    $.ajax({
+        type : "get",
+        url : '/query',
+        data : data,
+        datatype: 'json',
+        success:function (msg) {
+{#            alert( "Data Saved: " + msg.count );#}
+            $('form').attr('id', path)
+            $('#files').empty()
+            $('#file_count').text(currentNode + '：' + msg.count)
+            $.each(msg.lists, function (i, item) {
+{#                alert(item.filename)#}
+                $('#files').append("<li><a href=/" + item.file_id + ">" + item.filename + "</a></li>" +
+                    "<a href=\"/" + item.file_id + "/delete\" class=\"label label-danger\">删除</a>" +
+                        "<a href=\"/" + item.file_id +  "/update\" class=\"label label-warning\">重新上传</a>"
+                );
+            })
+        }
+    })
+});
+</script>
+</div>
+<div class="col-md-3">
+    <div id="container">
+        <p id="file_count">总文件数：{{ count }}</p>
+        <form name='' id={{ company_name }} method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" id="file" />
+            <input class="btn btn-default" type="submit" value="添加文件">
+        </form>
+    {#        进度条#}
+<br>
+<div class="progress" style="display: none;">
+<div class="progress-bar" role="progressbar" aria-valuenow="0"
+    aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+        0%
+</div>
+</div>
+        <hr/>
+        <ul id="files">
+            {% for file in files %}
+                <li>
+                    <a href={{ url_for('main.download',file_id=file._id) }}>{{ file.filename }}</a>
+
+                </li>
+            {% endfor %}
+        </ul>
+        </div>
+    </div>
+<div class="col-lg-5">
+     <iframe name="myiframe" id="iframe"></iframe>
+</div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+<script src="/static/spark-md5.js"></script>
+<script src="/static/upload.js"></script>
+    <script src="/static/upload_one.js"></script>
+{% endblock %}

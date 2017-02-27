@@ -1,0 +1,589 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}智信九鼎{% endblock %}
+{% block head %}
+{{ super() }}
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="/static/dist/themes/default/style.min.css" />
+<link href="/static/bootstrap_fileinput/css/fileinput.min.css" media="all" rel="stylesheet" type="text/css" />
+<script src="/static/dist/jstree.min.js"></script>
+<script src="path/to/js/fileinput.min.js"></script>
+    <style>
+    iframe
+    {
+        width: 500px;
+        height: 600px;
+        overflow: scroll;
+    }
+    .file{
+        position:relative;
+        display:inline-block;
+        background:#D0EEFF;
+        border:1px solid #99D3F5;
+        border-radius:4px;
+        padding:4px 12px;
+        overflow:hidden;
+        color:#1E88C7;
+    }
+    .file input{
+        position:absolute;
+        font-size:100px;
+        right:0;
+        top:0;
+        opacity:0;
+    }
+    </style>
+{% endblock %}
+
+{% block page_content %}
+<div class="page-header ">
+<div class="row">
+    <div class="col-md-8">
+    <h1>欢迎,{{ current_user.username }}</h1>
+
+    </div>
+{#    上传#}
+{#    <div id='upload_library' class="col-md-4">#}
+{#        <form  id="" method="POST" enctype="multipart/form-data">#}
+{#        <input type="file" name="file" id="file">#}
+{#        <br>#}
+{#        <input class="btn btn-default" type="submit" value="上传压缩包">#}
+{#        </form>#}
+{#        <br>#}
+{#        <div class="progress" style="display: none;">#}
+{#        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">#}
+{#                0%#}
+{#        </div>#}
+{#        </div>#}
+{#    </div>#}
+    <div>
+        <input id="input-id" type="file" class="file" data-preview-file-type="text" >
+
+    </div>
+    <script>
+        $("#input-id").fileinput();
+{#        $("#input-id").fileinput({'showUpload':false, 'previewFileType':'any'});#}
+    </script>
+</div>
+
+<div id='search' class="row">
+    <form method="POST" >
+        <div class="input-group">
+            <span>
+                <select class="form-control" style="width:20%" name="library" id="select1">
+                    <option value="全部">全部</option>
+                    {%  for i in library1 %}
+                        <option value={{ i }}>{{ i }}</option>
+                    {% endfor %}
+                </select>
+            </span>
+            <span>
+                <select class="form-control" style="width:10%" name="option" id="select2">
+                    <option value="全文搜索">全文搜索</option>
+                    <option value="文件搜索">文件搜索</option>
+                </select>
+            </span>
+                <input id='search_name' type="text" class="form-control" placeholder="请输入关键字" name="search_name" style="width:70%">
+            <span class="input-group-btn">
+                <button class="btn btn-info" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+            </span>
+        </div>
+    </form>
+</div>
+<br>
+
+<div id="node_edit">
+
+</div>
+
+<!-- 分享模态框（Modal） -->
+<div class="modal fade" id="share_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+				<h4 id='share_file' class="modal-title" id="myModalLabel">
+					分享文件夹：
+				</h4>
+			</div>
+			<div class="modal-body">
+                <p><font color="red">已生成分享链接...</font></p>
+				<p id="p1">分享链接：</p>
+                <p id="p2">分享密码：</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 分享模态框（Modal） -->
+
+<!-- 删除模态框（Modal） -->
+<div class="modal fade" id="delete_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+				<h4 id='delete_file' class="modal-title" id="myModalLabel">
+					删除文件夹：
+				</h4>
+			</div>
+			<div class="modal-body">
+                <p>是否删除此文件夹的所有内容？</p>
+			</div>
+			<div class="modal-footer">
+                <button id="delete_node" type="button" class="btn btn-primary" data-dismiss="modal">删除
+				</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 删除模态框（Modal） -->
+
+<!-- 重命名模态框（Modal） -->
+<div class="modal fade" id="rename_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modalFiles.search(library,option,search_name)-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+				<h4 id='rename_file' class="modal-title" id="myModalLabel">
+					重命名文件夹：
+				</h4>
+			</div>
+			<div class="modal-body" id="rename_modal-body">
+                <form id="rename_form" action="" class="form-inline" role="form">
+                    <div class="form-group">
+                    <label class="sr-only" for="name">请输入名称</label>
+                    <input type="text" class="form-control"  name="rename" placeholder="请输入名称">
+                    </div>
+                    <button type="submit" class="btn btn-default">更改</button>
+                </form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 重命名模态框（Modal） -->
+
+<!-- 新建文件夹模态框（Modal） -->
+<div class="modal fade" id="name_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+				<h4 id='name_file' class="modal-title" id="myModalLabel">
+					父文件夹：
+				</h4>
+			</div>
+			<div class="modal-body" id="name_modal-body">
+                <form id="name_form" action="" class="form-inline" role="form">
+                    <div class="form-group">
+                    <label class="sr-only" for="name">请输入名称</label>
+                    <input type="text" class="form-control"  name="name" placeholder="请输入名称">
+                    </div>
+                    <button type="submit" class="btn btn-default">确认</button>
+                </form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 新建文件夹模态框（Modal） -->
+
+<!-- 添加文件模态框（Modal） -->
+<div class="modal fade" id="addfile_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+				<h4 id='addfile_file' class="modal-title" id="myModalLabel">
+					当前文件夹文件夹：
+				</h4>
+			</div>
+			<div class="modal-body" id="addfile_modal-body">
+                <form id="addfile_form" action="" class="form-inline" role="form">
+                    <div class="form-group">
+                    <label class="sr-only" for="name">请选择文件</label>
+                    <input type="file" name="file" multiple>
+                        <br>
+                    <button type="submit" class="btn btn-default">添加</button>
+                    </div>
+                </form>
+			</div>
+			<div class="modal-footer">
+
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 添加文件模态框（Modal） -->
+
+<!-- 删除单文件模态框（Modal） -->
+{#<div class="modal fade" id="delete_file_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">#}
+{#	<div class="modal-dialog">#}
+{#		<div class="modal-content">#}
+{#			<div class="modal-header">#}
+{#				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">#}
+{#					&times;#}
+{#				</button>#}
+{#				<h4 id='addfile_file' class="modal-title" id="myModalLabel">#}
+{#					当前文件：#}
+{#				</h4>#}
+{#			</div>#}
+{#			<div class="modal-body" id="addfile_modal-body">#}
+{#                <p>是否删除当前文件？</p>#}
+{#			</div>#}
+{#			<div class="modal-footer">#}
+{#                <button id="delete_node" type="button" class="btn btn-primary" data-dismiss="modal">删除#}
+{#				</button>#}
+{#				<button type="button" class="btn btn-default" data-dismiss="modal">关闭#}
+{#				</button>#}
+{#			</div>#}
+{#		</div>#}
+{#	</div>#}
+{#</div>#}
+<!-- 删除单文件模态框（Modal） -->
+
+<!-- 重新上传模态框（Modal） -->
+<div class="modal fade" id="update_file_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+				<h4 class="modal-title" id="myModalLabel">
+					替换文件
+				</h4>
+			</div>
+			<div class="modal-body" id="update_file_modal-body">
+                <form id="update_file_form" action="" class="form-inline" role="form">
+                    <div class="form-group">
+                    <label class="sr-only" for="name">请重新上传此文件</label>
+                    <input type="file" name="file">
+                        <br>
+                    <button type="submit" class="btn btn-default">替换</button>
+                    </div>
+                </form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 重新上传模态框（Modal） -->
+
+<script>
+
+</script>
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+      <p>情报库：</p>
+      {% for library_name in library %}
+          <div id="{{ library_name }}"></div>
+
+          <script>
+{#          加载树状结构#}
+          var data1 = {};
+          var tag;
+          $('#' + '{{ library_name }}').jstree({
+              'core' : {
+              'data' : {
+              "url" : "/get_folder_json/{{ library_name }}",
+              "dataType" : "json"
+                }
+            }
+      });
+$('#'+'{{ library_name }}').on("changed.jstree", function (e, data){
+    var currentNode = data.instance.get_selected(true)[0].text;
+    var path = data.instance.get_path(data.node,"/");
+    var data = { "tag": path };
+    data1 = { "tag": path };
+    tag = path;
+    console.log(data1);
+    console.log('path:' + path);
+    console.log('data:' + data['tag']);
+    $('#share_file').text('分享文件夹：' + currentNode);
+    $('#delete_file').text('删除文件夹：' + currentNode);
+    $('#rename_file').text('重命名文件夹：' + currentNode);
+    $('#name_file').text('父文件夹：' + currentNode);
+    $('#addfile_file').text('当前文件夹：' + currentNode);
+    $('#node_edit').empty();
+    $('#node_edit').append('<p>' + currentNode + '</p>' +
+        '<button class="btn btn-default" data-toggle="modal" data-target="#rename_Modal">重命名</button>' +
+        '<button class="btn btn-default" data-toggle="modal" data-target="#name_Modal">新建文件夹</button>' +
+        '<button type="button" class="btn btn-default" disabled="disabled">打包下载</button> ' +
+        '<button type="button" class="btn btn-default" disabled="disabled">添加爬虫</button> ' +
+        '<button type="button" class="btn btn-default" data-toggle="modal" data-target="#addfile_Modal">添加文件</button> ' +
+        '<button id="share" class="btn btn-info" data-toggle="modal" data-target="#share_Modal">分享 </button>' +
+        '<button id="delete" type="button" class="btn btn-warning" data-toggle="modal" data-target="#delete_Modal">删除</button>'
+    );
+
+    $.ajax({
+        type : "get",
+        url : '/get_files',
+        data : data,
+        datatype: 'json',
+        success:function (msg) {
+            $('form').attr('id', path)
+            $('#files').empty()
+            $('#file_count').text(currentNode + '：' + msg.count)
+            $.each(msg.lists, function (i, item) {
+                $('#files').append("<li id=" + item.file_id + "><a href=" + '#' + ">" + item.filename + "</a></li>" +
+                    '<a href="/delete/' + item.file_id +  '"class="label label-danger">删除</a>' +
+                        '<a id=update_link name="' + item.file_id + '" href="#" class="label label-warning" data-toggle="modal" data-target="#update_file_Modal">替换</a>' +
+                    "<a href='/download/" + item.file_id + "'class='label label-success' >下载</a>" +
+                        '<span class="label label-warning">' + item.status + '</span>'
+                );
+            })
+        }
+    })
+});
+    $('#node_edit').on('click','#share', function () {
+        $.ajax({
+            type : 'get',
+            url : '/get_share_link',
+            data : data1,
+            datatype:'json',
+            success:function (msg) {
+                $('.modal-body > #p1').text('分享链接:' + msg.share_link)
+                $('.modal-body > #p2').text('分享密码:' + msg.share_code)
+                console.log(msg.share_link)
+                console.log(msg.share_code)
+            }
+        })
+    })
+
+    $('#delete_node').on('click',function () {
+        $.ajax({
+            type : 'get',
+            url : '/delete_node',
+            data : data1,
+            datatype:'json',
+            success:function (msg) {
+                window.location.reload()
+                alert('删除成功！')
+            }
+        })
+    })
+
+    $('#rename_modal-body > form').on('submit', function (e) {
+        e.preventDefault();
+        var formData = new FormData(this);
+        formData.append("tag", tag)
+        $.ajax({
+            type : 'POST',
+            url : '/rename_node',
+            data : formData,
+            processData: false,
+            contentType: false,
+            success:function (msg) {
+{#                alert('重命名成功！')#}
+                window.location.reload()
+            }
+        })
+    })
+
+    $('#name_modal-body > form').on('submit', function (e) {
+    e.preventDefault();
+    var formData = new FormData(this);
+    formData.append("tag", tag)
+    $.ajax({
+        type : 'POST',
+        url : '/new_node',
+        data : formData,
+        processData: false,
+        contentType: false,
+        success:function (msg) {
+                alert('新建文件成功！')
+            window.location.reload()
+        }
+    })
+    });
+
+    $('#addfile_modal-body > form').on('submit', function (e) {
+        e.preventDefault();
+        var formData = new FormData(this);
+        formData.append("tag", tag)
+        $.ajax({
+            type : 'POST',
+            url : '/add_file',
+            data : formData,
+            processData: false,
+            contentType: false,
+            success:function (msg) {
+{#                alert('添加文件成功')#}
+                alert(msg)
+                window.location.reload()
+            }
+        })
+    })
+
+    $(document).ready(function () {
+        $("#files").on("click", "#update_link", function () {
+            var file_id = $(this).attr('name')
+            console.log(file_id)
+            $('#update_file_modal-body > form').on('submit', function (e) {
+                e.preventDefault();
+                var formData = new FormData(this);
+                formData.append("file_id", file_id)
+                $.ajax({
+                    type : 'POST',
+                    url : '/update_file',
+                    data : formData,
+                    processData: false,
+                    contentType: false,
+                    success:function (msg) {
+        {#                alert('更新成功')#}
+                        alert(msg)
+                        window.location.reload()
+                    }
+                })
+            })
+        });
+    });
+</script>
+{% endfor %}
+
+</div>
+
+<div class="col-md-3">
+    <div id="container">
+        <p id="file_count">总文件数：{{ count }}</p>
+        <ul class="list-group" id="files">
+            {% for file in files %}
+                <li id={{ file._id }}>
+                    <a href='#'>{{ file.filename }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+        </div>
+</div>
+
+
+<div class="col-md-5">
+    <p id="filename">预览：</p>
+    <iframe name="myiframe" id="iframe"></iframe>
+</div>
+</div>
+
+<script>
+
+$(document).ready(function () {
+$("#files").on("click","li",function(){
+　　 var file_id = $(this).attr('id');
+    var data = {'file_id': file_id};
+        $.ajax({
+            type: 'GET',
+            url: '/query_html',
+            data: data,
+            datatype: 'json',
+            beforeSend: function (XMLHttpRequest) {
+                $('#filename').html('加载中：<img src="/static/loading1.gif"/>')
+            },
+            success: function (msg) {
+                $('#filename').text('预览:' + msg.filename);
+                $('iframe').attr('srcdoc', msg.html1)
+            }
+        });
+    });
+});
+    $('#search > form').on('submit', function (e) {
+        e.preventDefault();
+        var formData = new FormData(this);
+        $.ajax({
+            type : 'POST',
+            url : '/search',
+            data : formData,
+            processData: false,
+            contentType: false,
+            success:function (msg) {
+                console.log(msg.library_search)
+                $('#files').empty()
+                $('#file_count').empty()
+                if (msg.match_count > 0)
+                {
+                     $('#file_count').text('搜索文件数：' + msg.count + '匹配个数：' + msg.match_count)
+                }
+                else
+                {
+                     $('#file_count').text('搜索文件数：' + msg.count)
+                }
+                $.each(msg.files_list, function (i, item) {
+                    if (item[0] > 0)
+                    {
+                    $('#files').append(
+                    '<li id=' + item[2] + '>' +
+                    '<span class="badge">' + item[0] + '</span>' +
+                    '<a href="#">' + item[1].filename + '</a>' +
+                    '</li>' +
+                    '<a href="/download/' + item[2] + '" class="label label-success"' + '>下载</a>' +
+                    '<span class="label label-warning">' + item[1].status + '</span>'
+                   )
+                    }
+                    else
+                    {
+                    $('#files').append(
+                    '<li id=' + item[2] + '>' +
+                    '<a href="#">' + item[1].filename + '</a>' +
+                    '</li>' +
+                    '<a href="/download/' + item[2] + '" class="label label-success"' + '>下载</a>' +
+                    '<span class="label label-warning">' + item[1].status + '</span>')
+                    }
+                })
+            }
+        });
+{#        $.ajax({#}
+{#        type : "get",#}
+{#        url : '/get_files',#}
+{#        data : data,#}
+{#        datatype: 'json',#}
+{#        success:function (msg) {#}
+{#            $('form').attr('id', path)#}
+{#           #}
+{#            $.each(msg.lists, function (i, item) {#}
+{#                $('#files').append("<li id=" + item.file_id + "><a href=" + '#' + ">" + item.filename + "</a></li>" +#}
+{#                    '<a href="/delete/' + item.file_id +  '"class="label label-danger">删除</a>' +#}
+{#                        '<a id=update_link name="' + item.file_id + '" href="#" class="label label-warning" data-toggle="modal" data-target="#update_file_Modal">替换</a>' +#}
+{#                    "<a href='/download/" + item.file_id + "'class='label label-success' >下载</a>"#}
+{#                );#}
+{#            })#}
+{#        }#}
+{#    })#}
+    })
+</script>
+
+{% endblock %}
+
+{% block scripts %}
+{#{{ super() }}#}
+<script src="/static/spark-md5.js"></script>
+<script src="/static/upload.js"></script>
+{% endblock %}

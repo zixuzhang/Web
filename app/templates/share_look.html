@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}智信九鼎{% endblock %}
+{% block head %}
+{{ super() }}
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="/static/dist/themes/default/style.min.css" />
+<script src="/static/dist/jstree.min.js"></script>
+    <style>
+    iframe
+    {
+        width: 500px;
+        height: 600px;
+        overflow: scroll;
+    }
+    </style>
+{% endblock %}
+
+{% block page_content %}
+<div class="page-header ">
+
+<div class="row">
+    <form action="/full_text/search1" method="POST" >
+        <div class="input-group">
+            <span>
+                <select class="form-control" style="width:30%" name="option" id="select_id">
+                    <option value="搜索全部文件">搜索全部文件</option>
+                    <option value="搜索文件名">搜索文件名</option>
+                    {%  for i in company %}
+                        <option value={{ i }}>{{ i }}</option>
+                    {% endfor %}
+                </select>
+            </span>
+                <input type="text" class="form-control" placeholder="请输入关键字" name="search_name" style="width:70%">
+            <span class="input-group-btn">
+                <button class="btn btn-info" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+            </span>
+        </div>
+    </form>
+</div>
+<br>
+
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+      <p>情报库：</p>
+      <div id="{{ share_md5 }}"></div>
+<script>
+$('#' + '{{ share_md5 }}').jstree({
+    'core' : {
+        'data' : {
+            "url" : "/get_folder_json/{{ field_str }}",
+            "dataType" : "json"
+            }
+        }
+    });
+$('#' + '{{ share_md5 }}').on("changed.jstree", function (e, data){
+    var currentNode = data.instance.get_selected(true)[0].text;
+    var path = data.instance.get_path(data.node,"/");
+    var share_md5 = $(this).attr('id')
+    var data = { "tag": path, "share_md5": share_md5};
+    $.ajax({
+        type : "get",
+        url : '/get_files1',
+        data : data,
+        datatype: 'json',
+        success:function (msg) {
+            $('form').attr('id', path)
+            $('#files').empty()
+            $('#file_count').text(currentNode + '：' + msg.count)
+            $.each(msg.lists, function (i, item) {
+                $('#files').append("<li id=" + item.file_id + "><a href=" + '#' + ">" + item.filename + "</a></li>" +
+                        "<a href='/" + item.file_id + "'class='label label-success' >下载</a>"
+                );
+            })
+        }
+    })
+});
+</script>
+
+</div>
+
+<div class="col-md-3">
+    <div id="container">
+        <p id="file_count">总文件数：{{ count }}</p>
+        <ul class="list-group" id="files">
+            {% for file in files %}
+                <li id={{ file._id }}>
+                    <a href='#'>{{ file.filename }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+        </div>
+</div>
+
+
+<div class="col-md-5">
+    <p id="filename">预览：</p>
+    <iframe name="myiframe" id="iframe"></iframe>
+</div>
+</div>
+
+<script>
+
+$(document).ready(function () {
+$("#files").on("click","li",function(){
+　　 var file_id = $(this).attr('id');
+    var data = {'file_id': file_id};
+        $.ajax({
+            type: 'GET',
+            url: '/query_html',
+            data: data,
+            datatype: 'json',
+            beforeSend: function (XMLHttpRequest) {
+                $('#filename').html('加载中：<img src="/static/loading1.gif"/>')
+            },
+            success: function (msg) {
+                $('#filename').text('预览:' + msg.filename);
+                $('iframe').attr('srcdoc', msg.html1)
+            }
+        });
+    });
+});
+</script>
+{% endblock %}
+
+{#{% block scripts %}#}
+{#{{ super() }}#}
+{#{% endblock %}#}

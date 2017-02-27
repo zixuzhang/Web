@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% block title %}智信九鼎{% endblock %}
+{% block head %}
+    {{ super() }}
+    <script src="/static/jquery.mark.min.js"></script>
+    <style>
+    mark
+    {
+        background: orange;
+        color: black;
+    }
+    iframe
+    {
+        width: 750px;
+        height: 600px;
+        overflow: scroll;
+    }
+    </style>
+{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+    <form method="POST" >
+        <div class="input-group">
+            <span>
+                <select class="form-control" style="width:30%" name="option" id="select_id">
+                    <option value="搜索全部文件">搜索全部文件</option>
+                    <option value="搜索文件名">搜索文件名</option>
+                    {%  for i in company %}
+                        <option value={{ i }}>{{ i }}</option>
+                    {% endfor %}
+                </select>
+            </span>
+                <input type="text" class="form-control" placeholder="请输入关键字" name="search_name" style="width:70%">
+            <span class="input-group-btn">
+                <button class="btn btn-info" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+            </span>
+        </div>
+    </form>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <p>总文件数：{{ count }}   关键字匹配个数：{{ match_count }}</p>
+    </div>
+    <div class="col-md-8">
+        <p id="filename">预览：</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4" style="height:600px; overflow:auto">
+    <ul class="">
+        {% for i in files_list %}
+        <li id={{ i[2] }}>
+            <span class="badge">{{ i[0] }}</span>
+            <a href="#">{{ i[1].filename }}</a>
+        </li>
+            <a href="{{ url_for('main.download',file_id = i[1]._id) }}" class="label label-success" >下载</a>
+            <span class="label label-warning">{{ i[1].status }}</span>
+        {% endfor %}
+    </ul>
+    </div>
+    <div class="col-md-8">
+        <iframe name="myiframe" id="iframe"></iframe>
+    </div>
+</div>
+{%  if pagination %}
+    {{ pagination.links }}
+{% endif %}
+
+
+<script>
+{#高亮#}
+{#    var keyword = '{{ search_name }}'#}
+{#    $('.col-md-8').mark(keyword)#}
+$(document).ready(function () {
+    $('li').click(function () {
+        var file_id =$(this).attr('id')
+        var data = {'file_id': file_id}
+        $.ajax({
+            type:'GET',
+            url:'/query_html',
+{#            cache:false,#}
+            data:data,
+            datatype:'json',
+            beforeSend:function (XMLHttpRequest) {
+                $('#filename').html('加载中：<img src="/static/loading1.gif"/>')
+{#                $('iframe').removeAttr("srcdoc")#}
+{#                $('iframe').attr('src',"/static/loading.html")#}
+            },
+            success:function (msg) {
+                $('#filename').text('预览:'+msg.filename);
+{#                $('iframe').removeAttr("src")#}
+                $('iframe').attr('srcdoc', msg.html1)
+            }
+        })
+    })
+ })
+</script>
+{% endblock %}
